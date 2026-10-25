@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="assets/img/lg_ff.webp">
+<title>آفاق تعاون</title>
+<script>document.documentElement.setAttribute("dir","rtl");document.documentElement.setAttribute("lang","ar");</script>
+<meta name="description" content="مقترح شراكة بين شركة آفاق المستقبل وشركة عِلم، بخبرة جمعية أصول، لخدمة مبادرات رابطة العالم الإسلامي">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@500;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+
+/* Layout: a seven-chapter journey from need to impact; a sticky chapter rail on top, one strong dark hero over the Prophet's Mosque, then calm paper chapters with one interactive centrepiece each. */
+:root{
+  --ground:#F2F4F6; --paper:#FFFFFF; --sunk:#E9EDF1;
+  --ink:#14223B; --ink2:#3B4960; --muted:#667386; --line:#DDE3EA;
+  --teal:#0D8584; --teal-soft:#E1F1F0; --gold:#A97C2F; --gold-soft:#F5ECDB;
+  --mwl:#1D6A4C; --mwl-soft:#E3F0EA; --elm:#272F6B; --elm-soft:#E8E8F5; --ff:#C2503E; --ff-soft:#F8E6E1; --osoul:#24456E; --osoul-soft:#E2EAF4;
+  --night:#0C1626; --night2:#13213A; --on-night:#EEF2F7; --on-night-muted:#B7C2D2;
+  --plate:#FFFFFF;
+  --shadow:0 1px 2px rgba(20,34,59,.06),0 10px 30px rgba(20,34,59,.07);
+  --r:16px;
+  --font:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --display:"Noto Naskh Arabic","IBM Plex Sans Arabic",serif;
+  --max:1180px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ground:#0B1320; --paper:#131E31; --sunk:#0F1929;
+  --ink:#E9EEF4; --ink2:#C4CDD9; --muted:#8F9BAD; --line:#243350;
+  --teal:#3DB8B2; --teal-soft:#10302F; --gold:#D8B06A; --gold-soft:#2C2416;
+  --mwl:#5CBE95; --mwl-soft:#13291F; --elm:#AEB6F2; --elm-soft:#1C2142; --ff:#F08A76; --ff-soft:#33201C; --osoul:#93B6E2; --osoul-soft:#172741;
+  --night:#070E19; --night2:#0E1A2D;
+  --plate:#F4F6F9;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#0B1320; --paper:#131E31; --sunk:#0F1929;
+  --ink:#E9EEF4; --ink2:#C4CDD9; --muted:#8F9BAD; --line:#243350;
+  --teal:#3DB8B2; --teal-soft:#10302F; --gold:#D8B06A; --gold-soft:#2C2416;
+  --mwl:#5CBE95; --mwl-soft:#13291F; --elm:#AEB6F2; --elm-soft:#1C2142; --ff:#F08A76; --ff-soft:#33201C; --osoul:#93B6E2; --osoul-soft:#172741;
+  --night:#070E19; --night2:#0E1A2D;
+  --plate:#F4F6F9;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  color-scheme:dark}
+
+html,body{direction:rtl;text-align:right}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--ground);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+.num,.tab{font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--max);margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{text-wrap:balance;margin:0;line-height:1.35}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:13.5px}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:18px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;white-space:nowrap;text-decoration:none}
+.brand .plate{background:var(--plate);border-radius:10px;padding:4px 6px}
+.brand img{height:28px;width:auto}
+.chap-nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;min-width:0;flex:1}
+.chap-nav::-webkit-scrollbar{display:none}
+.chap-nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-size:13.5px;padding:7px 11px;border-radius:999px;transition:background .2s,color .2s}
+.chap-nav a b{font-weight:600;color:var(--teal);margin-left:5px}
+.chap-nav a:hover,.chap-nav a.on{background:var(--teal-soft);color:var(--ink)}
+.progress{position:absolute;inset:auto 0 -1px 0;height:2px;background:transparent}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--teal));transition:width .1s linear}
+.themebtn{border:1px solid var(--line);background:var(--paper);border-radius:999px;width:36px;height:36px;display:grid;place-items:center;cursor:pointer;flex:none}
+.themebtn svg{width:17px;height:17px}
+
+/* hero */
+.hero{position:relative;background:var(--night);color:var(--on-night);overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2;background:url("assets/img/ph_hero.webp") center 40%/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,rgba(9,17,31,.97) 0%,rgba(9,17,31,.88) 42%,rgba(9,17,31,.45) 100%),linear-gradient(0deg,rgba(9,17,31,.9),transparent 45%)}
+.hero .wrap{padding-block:56px 52px;display:grid;gap:30px}
+.partners{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px}
+.partners .main{display:flex;align-items:center;gap:14px;background:#fff;border-radius:18px;padding:14px 20px;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.partners .main img{height:58px;width:auto}
+.partners .main .x{color:#9AA6B6;font-size:22px;font-weight:300}
+.partners .sub{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:10px 16px}
+.partners .sub span{font-size:12.5px;color:var(--on-night-muted)}
+.partners .sub .pl{background:#fff;border-radius:10px;padding:5px 8px}
+.partners .sub img{height:32px;width:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.02em;color:var(--gold);font-weight:600}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(36px,6.2vw,72px);line-height:1.25;max-width:14ch}
+.hero h1 em{font-style:normal;color:#E7C88B}
+.hero .lead{font-size:clamp(16px,1.6vw,19px);color:var(--on-night-muted);max-width:58ch}
+.hero .opening{font-family:var(--display);font-size:clamp(17px,1.8vw,21px);line-height:1.9;max-width:52ch;border-right:3px solid #E7C88B;padding-right:16px;color:#F4EBDA}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:12px 18px;border-radius:12px;border:1px solid transparent;cursor:pointer}
+.btn.gold{background:#E7C88B;color:#1A1405}
+.btn.ghost{border-color:rgba(255,255,255,.3);color:#fff}
+.btn.gold:hover{background:#F0D6A2}.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.hero .motto{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--on-night-muted)}
+.hero .motto b{color:#fff;font-weight:600}
+
+/* chapters */
+.chapter{padding-block:76px 30px}
+.chapter + .chapter{border-top:1px solid var(--line)}
+.ch-head{display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:start;margin-bottom:34px}
+.ch-num{grid-row:span 2;font-family:var(--display);font-size:64px;line-height:1;color:var(--gold);font-weight:700;min-width:62px;text-align:center}
+.ch-kicker{font-size:13px;color:var(--teal);font-weight:600;letter-spacing:.03em}
+.ch-head h2{font-family:var(--display);font-size:clamp(28px,3.8vw,42px);font-weight:700}
+.ch-head p{grid-column:2;color:var(--ink2);max-width:66ch;font-size:17px}
+.block{margin-top:46px}
+.block > h3{font-size:21px;font-weight:700;margin-bottom:6px}
+.block > .bl{color:var(--muted);max-width:68ch;margin-bottom:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--teal-soft);color:var(--teal)}
+.note{font-size:12.5px;color:var(--muted)}
+
+/* ch1 */
+.summary{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start}
+.summary .text p{font-size:17.5px;color:var(--ink2)}
+.summary .text p + p{margin-top:14px}
+.summary strong{color:var(--ink)}
+.tracks3{display:grid;gap:10px}
+.tracks3 a{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:border-color .2s,transform .2s}
+.tracks3 a:hover{border-color:var(--teal);transform:translateX(-3px)}
+.tracks3 .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--teal-soft);color:var(--teal)}
+.tracks3 .ic svg{width:22px;height:22px}
+.tracks3 b{display:block;font-size:16px}
+.tracks3 span{font-size:13.5px;color:var(--muted);line-height:1.6;display:block}
+.equation{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14.5px}
+.equation .t{padding:8px 14px;border-radius:999px;font-weight:600}
+.equation .op{color:var(--muted);font-weight:300;font-size:18px}
+.t.mwl{background:var(--mwl-soft);color:var(--mwl)}.t.elm{background:var(--elm-soft);color:var(--elm)}.t.ff{background:var(--ff-soft);color:var(--ff)}.t.os{background:var(--osoul-soft);color:var(--osoul)}
+.t.res{background:var(--ink);color:var(--paper)}
+.stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:36px}
+.stat{background:var(--paper);padding:20px 16px;display:flex;flex-direction:column;gap:4px}
+.stat .n{font-size:clamp(24px,2.6vw,32px);font-weight:700;line-height:1.2;color:var(--ink)}
+.stat .n small{font-size:.55em;font-weight:500;color:var(--muted)}
+.stat .l{font-size:13px;color:var(--ink2);line-height:1.55}
+.stat .s{font-size:11.5px;color:var(--muted);margin-top:auto;padding-top:8px}
+.why{counter-reset:w}
+.why .card h4{font-size:17px;margin-bottom:8px;display:flex;gap:10px;align-items:baseline}
+.why .card p{color:var(--ink2);font-size:15px}
+.gap{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:0;align-items:stretch;border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+.gap .side{padding:28px;display:flex;flex-direction:column;gap:16px}
+.gap .now{background:var(--mwl-soft)}
+.gap .plus{background:var(--paper)}
+.gap .mid{display:grid;place-items:center;background:var(--paper);padding:0 6px;border-inline:1px dashed var(--line)}
+.gap .mid span{writing-mode:vertical-rl;font-size:12.5px;color:var(--muted);letter-spacing:.06em}
+.gap h4{font-size:15px;color:var(--muted);font-weight:600}
+.gap .big{font-family:var(--display);font-size:clamp(46px,6vw,72px);line-height:1;font-weight:700}
+.gap .now .big{color:var(--mwl)}.gap .plus .big{color:var(--teal)}
+.gap ul{list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:14.5px;color:var(--ink2)}
+.gap li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:6px}
+.gap li b{color:var(--ink)}
+.langbar{display:grid;grid-template-columns:repeat(56,1fr);gap:2px;height:22px}
+.langbar i{border-radius:2px;background:var(--line)}
+.now .langbar i.on{background:var(--mwl)}
+.plus .langbar i{background:var(--teal)}
+.gap-caption{margin-top:14px;font-size:15.5px;color:var(--ink2);max-width:72ch}
+.gap-caption b{color:var(--ink)}
+
+/* ch2 ecosystem */
+.eco{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.orbit{position:relative;aspect-ratio:1/1;max-width:500px;width:100%;margin-inline:auto}
+.orbit svg.lines{position:absolute;inset:0;width:100%;height:100%}
+.orbit svg.lines circle{fill:none;stroke:var(--line);stroke-width:1.2;stroke-dasharray:4 6}
+.orbit svg.lines line{stroke:var(--line);stroke-width:1.2}
+.node{position:absolute;transform:translate(-50%,-50%);width:31%;aspect-ratio:1/1;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;box-shadow:var(--shadow);padding:10px;text-align:center;transition:transform .25s,border-color .25s,box-shadow .25s}
+.node .pl{background:var(--plate);border-radius:10px;padding:5px 7px;display:grid;place-items:center}
+.node img{max-height:34px;width:auto}
+.node b{font-size:13px;font-weight:600;line-height:1.35}
+.node small{font-size:11px;color:var(--muted);line-height:1.3}
+.node.c{width:38%;}
+.node.c img{max-height:44px}
+.node:hover{transform:translate(-50%,-50%) scale(1.04)}
+.node.on{border-width:2px}
+.node[data-k="mwl"].on{border-color:var(--mwl)}.node[data-k="elm"].on{border-color:var(--elm)}.node[data-k="ff"].on{border-color:var(--ff)}.node[data-k="osoul"].on{border-color:var(--osoul)}
+.eco-panel{min-height:320px}
+.eco-panel .role{font-size:13px;font-weight:600;padding:4px 12px;border-radius:999px;display:inline-block;margin-bottom:10px}
+.eco-panel h3{font-family:var(--display);font-size:28px;margin-bottom:16px}
+.eco-panel dl{margin:0;display:grid;gap:14px}
+.eco-panel dt{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.03em}
+.eco-panel dd{margin:3px 0 0;color:var(--ink2);font-size:15.5px}
+.eco-hint{font-size:12.5px;color:var(--muted);text-align:center;margin-top:10px}
+
+/* parties */
+.party{display:grid;grid-template-columns:240px minmax(0,1fr);gap:34px;padding-block:40px;border-top:1px dashed var(--line)}
+.party:first-of-type{border-top:0}
+.party-id{position:sticky;top:96px;align-self:start;display:grid;gap:12px}
+.party-id .pl{background:var(--plate);border-radius:14px;padding:14px;border:1px solid var(--line);display:grid;place-items:center}
+.party-id .pl img{max-height:64px;width:auto}
+.party-id h3{font-family:var(--display);font-size:24px}
+.party-id .role{font-size:13px;color:var(--muted)}
+.party-body > p.in{font-size:16.5px;color:var(--ink2);max-width:70ch}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.facts span{font-size:13px;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--ink2)}
+.matrix{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;margin-top:22px}
+.goals{display:grid;gap:8px}
+.goal{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;text-align:right;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:11px 14px;cursor:pointer;font-size:14.5px;line-height:1.6;transition:border-color .2s,background .2s}
+.goal i{font-style:normal;width:28px;height:28px;border-radius:8px;background:var(--mwl-soft);color:var(--mwl);display:grid;place-items:center;font-weight:700;font-size:13px}
+.goal.on{border-color:var(--mwl);background:var(--mwl-soft)}
+.goal.on i{background:var(--mwl);color:var(--paper)}
+.goal-out{display:grid;gap:10px;align-content:start}
+.goal-out .what{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px}
+.goal-out .what b{display:block;font-size:12.5px;color:var(--muted);margin-bottom:4px}
+.tr-pills{display:grid;gap:8px}
+.tr-pill{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px dashed var(--line);color:var(--muted);font-size:14px;transition:all .25s}
+.tr-pill.lit{border-style:solid;border-color:var(--teal);background:var(--teal-soft);color:var(--ink);font-weight:600}
+.tr-pill .dot{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.tr-pill.lit .dot{background:var(--teal)}
+.twocol{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:20px}
+.list{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.list li{position:relative;padding-right:18px;color:var(--ink2);font-size:15px}
+.list li::before{content:"";position:absolute;right:0;top:.75em;width:7px;height:7px;border-radius:2px;background:var(--gold)}
+.olist{margin:0;padding:0;list-style:none;display:grid;gap:12px;counter-reset:o}
+.olist li{counter-increment:o;display:grid;grid-template-columns:30px 1fr;gap:10px;font-size:15px;color:var(--ink2)}
+.olist li::before{content:counter(o);width:30px;height:30px;border-radius:50%;background:var(--elm-soft);color:var(--elm);display:grid;place-items:center;font-weight:700;font-size:13px}
+.olist b{color:var(--ink)}
+.card h4{font-size:16px;margin-bottom:12px}
+.centers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.center{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--paper)}
+.center b{display:block;font-size:15px;margin-bottom:4px}
+.center span{font-size:13.5px;color:var(--muted);line-height:1.6;display:block}
+.rings{display:flex;flex-wrap:wrap;gap:0;margin-top:22px;counter-reset:r}
+.rings li{list-style:none;counter-increment:r;flex:1 1 120px;position:relative;padding:14px 10px 12px;text-align:center;font-size:13.5px;font-weight:600;color:var(--ink)}
+.rings li::before{content:counter(r);display:grid;place-items:center;margin:0 auto 8px;width:38px;height:38px;border-radius:50%;border:2px solid var(--ff);color:var(--ff);background:var(--paper);font-weight:700;position:relative;z-index:1}
+.rings li::after{content:"";position:absolute;top:33px;right:50%;width:100%;height:2px;background:linear-gradient(270deg,var(--ff),var(--gold));opacity:.35}
+.rings li:last-child::after{display:none}
+.rings{padding:0}
+.ptn{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:20px}
+.ptn .card{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.ptn .ph{aspect-ratio:4/3;background:var(--sunk);overflow:hidden;cursor:zoom-in}
+.ptn .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ptn .ph:hover img{transform:scale(1.04)}
+.ptn .ph.empty.classera{gap:2px;align-content:center;font-size:24px;font-family:var(--font);font-weight:700;letter-spacing:.02em;color:var(--teal);background:linear-gradient(135deg,var(--teal-soft),var(--sunk))}
+.ptn .ph.empty.classera small{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:0}
+.ptn .ph.empty{display:grid;place-items:center;color:var(--muted);font-family:var(--display);font-size:22px;cursor:default;background:linear-gradient(135deg,var(--ff-soft),var(--gold-soft))}
+.ptn .bd{padding:16px;display:grid;gap:6px}
+.ptn .bd b{font-size:15px;line-height:1.5}
+.ptn .bd span{font-size:13.5px;color:var(--ink2);line-height:1.65}
+.ptn .bd .tag{justify-self:start}
+.onum{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+.onum .card{padding:18px}
+.onum .n{font-size:30px;font-weight:700;color:var(--osoul);line-height:1.2}
+.onum .l{font-size:13.5px;color:var(--ink2);line-height:1.55}
+.mini-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+.mini-stats div{background:var(--sunk);border-radius:12px;padding:12px 14px;font-size:13.5px;color:var(--ink2);line-height:1.55}
+.mini-stats b{display:block;font-size:18px;color:var(--ink)}
+.inits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.init{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--paper)}
+.init b{font-family:var(--display);font-size:18px;display:block;margin-bottom:4px;color:var(--osoul)}
+.init span{font-size:13.5px;color:var(--ink2);line-height:1.65;display:block}
+.sabeel{margin-top:22px;border-radius:22px;background:var(--night);color:var(--on-night);padding:28px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:26px;align-items:start}
+.sabeel .lg{background:#fff;border-radius:16px;padding:12px;width:110px}
+.sabeel h4{font-family:var(--display);font-size:24px;margin-bottom:6px}
+.sabeel p{color:var(--on-night-muted);font-size:15px}
+.sb-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.12);border-radius:14px;overflow:hidden;margin-top:18px}
+.sb-grid div{background:var(--night2);padding:14px}
+.sb-grid b{display:block;font-size:24px;color:#E7C88B;line-height:1.3}
+.sb-grid span{font-size:12.5px;color:var(--on-night-muted);line-height:1.5;display:block}
+
+/* ch4 assets */
+.bank{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.asset{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--paper);display:flex;flex-direction:column;gap:8px}
+.asset b{font-size:15.5px}
+.asset span{font-size:13.5px;color:var(--ink2);line-height:1.6}
+.asset .use{margin-top:auto;font-size:12.5px;color:var(--teal);font-weight:600;padding-top:8px;border-top:1px dashed var(--line)}
+.showcase{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px;align-items:start}
+.browser{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow)}
+.browser .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:var(--sunk);border-bottom:1px solid var(--line);direction:ltr}
+.browser .bar i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.browser .bar span{margin-left:10px;font-size:11.5px;color:var(--muted);background:var(--paper);border-radius:6px;padding:2px 10px;font-family:ui-monospace,monospace}
+.browser .view{aspect-ratio:16/10;background:#fff;cursor:zoom-in;overflow:hidden}
+.browser .view img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.thumbs{display:flex;gap:8px;padding:10px;overflow-x:auto;background:var(--paper);border-top:1px solid var(--line)}
+.thumbs button{flex:none;width:92px;border:2px solid transparent;border-radius:8px;padding:0;overflow:hidden;cursor:pointer;background:var(--sunk);opacity:.7;transition:opacity .2s,border-color .2s}
+.thumbs button img{aspect-ratio:16/10;object-fit:cover;object-position:top;width:100%}
+.thumbs button.on,.thumbs button:hover{opacity:1;border-color:var(--teal)}
+.sc-text h4{font-family:var(--display);font-size:26px;margin-bottom:6px}
+.sc-text .cap{font-size:15px;color:var(--ink2);min-height:3.4em;margin:14px 0;border-right:3px solid var(--teal);padding-right:12px}
+.kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.kv div{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--paper)}
+.kv b{display:block;font-size:20px;color:var(--teal)}
+.kv span{font-size:12.5px;color:var(--muted)}
+.lib-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.lib-tabs button,.tabs button{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 16px;cursor:pointer;font-size:14px;color:var(--ink2)}
+.lib-tabs button.on,.tabs button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.lib-tabs button span{font-size:12px;opacity:.7;margin-right:4px}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:14px}
+.book{border:0;background:none;padding:0;cursor:zoom-in;text-align:right;display:grid;gap:6px}
+.book .cv{aspect-ratio:var(--ar,0.71);border-radius:6px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.1),0 8px 18px rgba(20,34,59,.12);background:var(--sunk);transition:transform .25s}
+.book .cv img{width:100%;height:100%;object-fit:cover}
+.book:hover .cv{transform:translateY(-4px) rotate(-.6deg)}
+.book span{font-size:12.5px;color:var(--ink2);line-height:1.45}
+.lib-note{margin-top:14px}
+
+/* ch5 build */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.track{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px}
+.track .idea{font-family:var(--display);font-size:22px;line-height:1.7;color:var(--ink)}
+.track h5{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.03em;margin:18px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:4px 10px;color:var(--ink2)}
+.val{display:grid;gap:10px}
+.val div{border-radius:14px;padding:14px 16px;font-size:14.5px;color:var(--ink2)}
+.val .m{background:var(--mwl-soft)}.val .e{background:var(--elm-soft)}
+.val b{display:block;font-size:12.5px;margin-bottom:2px}
+.val .m b{color:var(--mwl)}.val .e b{color:var(--elm)}
+.minhaj{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:34px;align-items:center;background:linear-gradient(160deg,#0F4A44,#0B3531);border-radius:26px;padding:34px;color:#EAF4F1;position:relative;overflow:hidden}
+.minhaj::before{content:"";position:absolute;inset:auto auto -120px -120px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(219,186,124,.25),transparent 70%)}
+.phone{position:relative;width:100%;max-width:300px;margin-inline:auto;aspect-ratio:9/18.5;border-radius:42px;background:#06211E;padding:12px;box-shadow:0 0 0 2px #2A6B62,0 30px 60px rgba(0,0,0,.45)}
+.screen{width:100%;height:100%;border-radius:32px;background:linear-gradient(180deg,#F5F1E8,#ffffff 40%);color:#16302B;overflow:hidden;display:flex;flex-direction:column}
+.screen .sh{padding:22px 16px 12px;background:linear-gradient(160deg,#0F5B52,#0B3F39);color:#fff}
+.screen .sh small{display:block;font-size:10.5px;opacity:.75}
+.screen .sh b{font-family:var(--display);font-size:20px}
+.screen .apps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:14px 12px;flex:1;align-content:start}
+.app{border:0;background:#fff;border-radius:14px;padding:9px 4px 7px;display:grid;justify-items:center;gap:4px;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.06),0 4px 10px rgba(15,74,68,.08);font-size:10.5px;color:#16302B;line-height:1.3;transition:transform .2s,box-shadow .2s}
+.app svg{width:22px;height:22px;color:#0F5B52}
+.app.on{background:#0F5B52;color:#fff;transform:scale(1.05)}
+.app.on svg{color:#E7C88B}
+.screen .foot{font-size:10px;text-align:center;padding:8px;color:#58706B}
+.mz-panel h3{font-family:var(--display);font-size:clamp(24px,3vw,32px);margin-bottom:10px;color:#fff}
+.mz-panel .intro{color:#BFD8D2;font-size:15px;max-width:60ch}
+.mz-card{margin-top:20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px;min-height:180px}
+.mz-card .sec{font-size:12.5px;color:#E7C88B;font-weight:600}
+.mz-card h4{font-size:20px;margin:4px 0 10px;color:#fff}
+.mz-card p{color:#D6E7E2;font-size:15.5px}
+.mz-card .src{margin-top:14px;font-size:13px;color:#BFD8D2}
+.mz-card .src b{color:#fff;font-weight:600}
+.mz-strip{margin-top:18px;border-radius:14px;overflow:hidden;cursor:zoom-in;opacity:.95}
+.obs{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px;align-items:start}
+.regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.region{border-radius:14px;padding:14px;border:1px solid var(--line);background:var(--paper);display:grid;gap:8px}
+.region b{font-size:14.5px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.heat{display:flex;gap:3px}
+.heat i{width:14px;height:8px;border-radius:2px;background:var(--line)}
+.heat i.h{background:var(--gold)}
+.region span{font-size:12.5px;color:var(--muted);line-height:1.6}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--muted);margin-top:12px;align-items:center}
+.projects{display:grid;gap:14px}
+.proj{display:grid;grid-template-columns:72px minmax(0,1.3fr) minmax(0,1fr);gap:20px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px}
+.proj .pn{font-family:var(--display);font-size:52px;line-height:1;color:var(--gold);font-weight:700;text-align:center}
+.proj h4{font-size:19px;margin-bottom:6px}
+.proj p{color:var(--ink2);font-size:15px}
+.proj dl{margin:0;display:grid;gap:10px;font-size:14px}
+.proj dt{font-size:12px;color:var(--muted);font-weight:600}
+.proj dd{margin:2px 0 0;color:var(--ink2)}
+.proj .outs{margin-top:10px}
+
+/* ch6 */
+.chain{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;align-items:stretch}
+.link{position:relative;padding:18px 16px 18px 26px;border:1px solid var(--line);background:var(--paper);display:grid;gap:6px}
+.link:first-child{border-radius:0 16px 16px 0}
+.link:last-child{border-radius:16px 0 0 16px}
+.link + .link{border-right:0}
+.link::after{content:"";position:absolute;left:-11px;top:50%;width:20px;height:20px;background:var(--paper);border-left:1px solid var(--line);border-bottom:1px solid var(--line);transform:translateY(-50%) rotate(45deg);z-index:1}
+.link:last-child::after{display:none}
+.link .pl{background:var(--plate);border-radius:8px;padding:4px 6px;justify-self:start}
+.link img{height:26px;width:auto}
+.link b{font-size:15px}
+.link span{font-size:13px;color:var(--muted);line-height:1.6}
+.gov{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.gov .card{padding:18px}
+.gov b{display:block;font-size:16px;margin-bottom:4px}
+.gov .who{font-size:12.5px;color:var(--teal);font-weight:600}
+.gov p{font-size:14px;color:var(--ink2);margin-top:6px}
+.gov .freq{margin-top:10px;font-size:12px;color:var(--muted)}
+.road{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-top:36px}
+.road::before{content:"";position:absolute;top:14px;right:0;left:0;height:4px;border-radius:4px;background:linear-gradient(270deg,var(--gold),var(--teal))}
+.phase{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:8px;align-content:start}
+.phase::before{content:"";position:absolute;top:-30px;right:20px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--teal)}
+.phase .when{font-size:12.5px;color:var(--teal);font-weight:700}
+.phase b{font-size:17px}
+.phase span{font-size:14px;color:var(--ink2);line-height:1.65}
+.phase .gate{margin-top:6px;font-size:12.5px;color:var(--gold);font-weight:600;border-top:1px dashed var(--line);padding-top:8px}
+.pyr{display:grid;gap:8px;justify-items:center}
+.pyr div{border-radius:12px;padding:14px 18px;display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;width:100%}
+.pyr div:nth-child(1){max-width:62%;background:var(--ink);color:var(--paper)}
+.pyr div:nth-child(2){max-width:76%;background:color-mix(in srgb,var(--teal) 85%,var(--ink))!important;color:#fff}
+.pyr div:nth-child(3){max-width:88%;background:var(--teal-soft)}
+.pyr div:nth-child(4){max-width:100%;background:var(--sunk)}
+.pyr b{font-size:16px}
+.pyr span{font-size:13.5px;line-height:1.6;opacity:.92}
+.qa{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.qa .card{padding:16px}
+.qa b{display:block;font-size:15px;margin-bottom:4px}
+.qa span{font-size:13.5px;color:var(--ink2);line-height:1.6;display:block}
+
+/* ch7 */
+.v2030{display:flex;flex-wrap:wrap;gap:10px}
+.v2030 div{flex:1 1 200px;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--paper)}
+.v2030 b{display:block;font-size:15px;margin-bottom:2px;color:var(--gold)}
+.v2030 span{font-size:13.5px;color:var(--ink2);line-height:1.6}
+.closing{margin-top:56px;background:var(--night);color:var(--on-night);border-radius:28px;overflow:hidden;position:relative;isolation:isolate}
+.closing .bg{position:absolute;inset:0;z-index:-2;background:url("assets/img/ph_madinah.webp") center/cover}
+.closing::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,rgba(9,17,31,.96),rgba(9,17,31,.8))}
+.closing-in{padding:44px clamp(20px,4vw,48px);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:36px}
+.closing h3{font-family:var(--display);font-size:clamp(28px,3.6vw,42px);margin-bottom:12px}
+.closing p{color:var(--on-night-muted);font-size:16px}
+.goal4{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.goal4 span{border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 14px;font-size:13.5px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px 14px;font-size:15px}
+.steps li::before{content:counter(s);width:38px;height:38px;border-radius:50%;background:#E7C88B;color:#1A1405;display:grid;place-items:center;font-weight:700}
+.contact{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.contact code{font-family:var(--font);background:rgba(255,255,255,.1);border-radius:10px;padding:8px 12px;font-size:14.5px;user-select:all;direction:ltr}
+.copy{border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:10px;padding:7px 12px;cursor:pointer;font-size:13px}
+.motto-end{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);text-align:center;padding:40px 16px 8px;color:var(--gold)}
+footer{margin-top:40px;background:var(--paper);border-top:1px solid var(--line)}
+footer .wrap{padding-block:30px 40px;display:grid;gap:22px}
+.flogos{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.flogos .pl{background:var(--plate);border-radius:10px;padding:8px 10px;border:1px solid var(--line)}
+.flogos img{height:34px;width:auto}
+details{border:1px solid var(--line);border-radius:14px;padding:12px 16px;background:var(--ground)}
+summary{cursor:pointer;font-weight:600;font-size:14.5px}
+details ul{margin:10px 0 0;padding-right:18px;font-size:13.5px;color:var(--ink2);columns:2;column-gap:28px}
+details a{color:var(--teal)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,10,18,.9);display:grid;grid-template-rows:1fr auto;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:100%;margin:auto;object-fit:contain;border-radius:8px;min-height:0}
+.lb .cap{color:#E6ECF3;text-align:center;font-size:14.5px;padding-top:12px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:22px;line-height:1}
+.lb .x{top:calc(14px + env(safe-area-inset-top,0px));left:max(14px,env(safe-area-inset-left,0px))}
+.lb .pv{top:50%;right:max(14px,env(safe-area-inset-right,0px))}
+.lb .nx{top:50%;left:max(14px,env(safe-area-inset-left,0px))}
+.zoom{cursor:zoom-in}
+
+.reveal{transition:opacity .6s ease,transform .6s ease}
+.reveal.pre{opacity:.001;transform:translateY(14px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal.pre{opacity:1;transform:none}}
+
+/* responsive */
+@media (max-width:1060px){
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .bank,.gov{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qa{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ptn{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .party{grid-template-columns:1fr;gap:18px}
+  .party-id{position:static;grid-template-columns:auto 1fr;align-items:center}
+  .party-id .pl{width:150px}
+  .party-id .txt{display:grid;gap:2px}
+}
+@media (max-width:860px){
+  .summary,.eco,.matrix,.showcase,.track,.obs,.closing-in,.twocol{grid-template-columns:1fr}
+  .minhaj{grid-template-columns:1fr;padding:22px}
+  .g3,.g4,.centers,.inits,.onum{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sb-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .sabeel{grid-template-columns:1fr}
+  .gap{grid-template-columns:1fr}
+  .ptn{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gap .mid{padding:6px;border-inline:0;border-block:1px dashed var(--line)}
+  .gap .mid span{writing-mode:horizontal-tb}
+  .chain{grid-template-columns:1fr 1fr;gap:10px}
+  .link,.link:first-child,.link:last-child{border-radius:14px;border:1px solid var(--line)}
+  .link::after{display:none}
+  .road{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .road::before{display:none}
+  .phase::before{display:none}
+  .road{padding-top:0}
+  .proj{grid-template-columns:52px minmax(0,1fr)}
+  .proj dl{grid-column:2}
+  .proj .pn{font-size:40px}
+  .regions{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pyr div{grid-template-columns:1fr;gap:2px}
+  .pyr div:nth-child(n){max-width:100%}
+  details ul{columns:1}
+  .chap-nav a b{display:none}
+}
+@media (max-width:560px){
+  .stats,.g2,.g3,.g4,.centers,.inits,.bank,.gov,.qa,.onum,.ptn,.chain,.road,.regions,.mini-stats{grid-template-columns:1fr}
+  .sb-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ch-head{grid-template-columns:1fr}
+  .ch-num{grid-row:auto;text-align:right;font-size:46px}
+  .ch-head p{grid-column:1}
+  .partners .main img{height:42px}
+  .partners .sub img{height:26px}
+  .hero .wrap{padding-block:40px 40px}
+  .brand span{display:none}
+  .orbit{max-width:360px}
+  .node b{font-size:11.5px}.node small{display:none}
+  .node img{max-height:24px}.node.c img{max-height:30px}
+  .rings li{flex-basis:45%}
+  .rings li::after{display:none}
+  .shelf{grid-template-columns:repeat(auto-fill,minmax(98px,1fr))}
+  .proj{grid-template-columns:1fr}
+  .proj dl{grid-column:1}
+  .proj .pn{text-align:right}
+  .kv{grid-template-columns:1fr 1fr}
+}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="plate"><img src="assets/img/lg_ff.webp" alt="شعار آفاق المستقبل"></span><span>آفاق تعاون</span></a>
+    <nav class="chap-nav" aria-label="فصول المقترح">
+      <a href="#ch1"><b>١</b>الفرصة</a>
+      <a href="#ch2"><b>٢</b>المنظومة</a>
+      <a href="#ch3"><b>٣</b>الأطراف</a>
+      <a href="#ch4"><b>٤</b>الرصيد الجاهز</a>
+      <a href="#ch5"><b>٥</b>ما سنبنيه معًا</a>
+      <a href="#ch6"><b>٦</b>كيف نعمل</a>
+      <a href="#ch7"><b>٧</b>الخطوة التالية</a>
+    </nav>
+    <button class="themebtn" id="themeBtn" aria-label="تبديل الوضع الليلي" title="تبديل الوضع الليلي"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+  </div>
+  <div class="progress"><i id="prog"></i></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg" role="img" aria-label="المسجد النبوي ليلًا"></div>
+  <div class="wrap">
+    <div class="partners">
+      <div class="main"><img src="assets/img/lg_ff.webp" alt="آفاق المستقبل Future Frontiers"><span class="x">×</span><img src="assets/img/lg_elm.webp" alt="عِلم elm"></div>
+      <div class="sub"><span>لخدمة</span><span class="pl"><img src="assets/img/lg_mwl.webp" alt="رابطة العالم الإسلامي"></span><span>بخبرة</span><span class="pl"><img src="assets/img/lg_osoul.webp" alt="جمعية أصول للمحتوى الدعوي"></span></div>
+    </div>
+    <span class="eyebrow">مقترح شراكة استراتيجية · أكتوبر 2026</span>
+    <h1>آفاق تعاون <em>لخدمة رسالة عالمية</em></h1>
+    <p class="lead">مقترح شراكة بين شركة آفاق المستقبل وشركة عِلم، بخبرة جمعية أصول للمحتوى الدعوي، لتطوير وتنفيذ مشروعات نوعية تخدم رابطة العالم الإسلامي.</p>
+    <p class="opening">تقنيةٌ وطنيةٌ موثوقة، ومحتوًى دعويٌّ من خبرة الميدان، ومنهجيةٌ تقيس الأثر؛ ليصل صوتُ الرابطة إلى كل مسلم بلغته، في هاتفه، وفي كل يوم.</p>
+    <div class="cta"><a class="btn gold" href="#ch1">استعرض المقترح ←</a><a class="btn ghost" href="#projects">المشروعات الأولى المقترحة</a></div>
+    <div class="motto"><b>من الاحتياج إلى الأثر</b></div>
+  </div>
+</section>
+
+<main>
+<!-- CH1 -->
+<section class="chapter" id="ch1"><div class="wrap">
+  <div class="ch-head reveal"><div class="ch-num">١</div><span class="ch-kicker">الفصل الأول · الفرصة</span><h2>المنصة قائمة، ولديها جمهور، والمرحلة التالية يصنعها المحتوى</h2><p>الملخص التنفيذي للمقترح، وأربعة أسباب تجعل هذا التوقيت مثاليًا.</p></div>
+
+  <div class="summary reveal">
+    <div class="text">
+      <p>تملك رابطة العالم الإسلامي المرجعيةَ الشرعية والامتدادَ العالمي، وقد أطلقت في نوفمبر 2025 منصة <strong>«منهاج»</strong> بوصفها أول مرجعية رقمية إسلامية جامعة، وتجاوزت تنزيلاتها نصف مليون على أندرويد وحده.</p>
+      <p>التحدي الآن ليس بناء المنصة، بل <strong>تغذيتها بمحتوى موثوق متعدد اللغات باستمرار، وتحويل مستخدميها إلى متعلمين، وقياس أثرها في المجتمعات المسلمة</strong>.</p>
+      <p>نقترح شراكة تكون فيها عِلم الشريكَ التقنيَّ والتعاقديَّ أمام الرابطة، وتكون آفاق المستقبل شريكَها المتخصص في المحتوى والتعليم والدراسات وقياس الأثر، مسنودةً برصيد جمعية أصول ومنصاتها الجاهزة.</p>
+    </div>
+    <div class="tracks3">
+      <a href="#trk"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z"/></svg></span><span><b>المعرفة والتخطيط التنموي</b><span>خارطة حرارية لاحتياجات المجتمعات المسلمة حسب البلد واللغة</span></span></a>
+      <a href="#trk"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5"/><path d="M9 8h7M9 11.5h5"/></svg></span><span><b>المحتوى والتعليم متعدد اللغات</b><span>حزم معرفية ومسارات تعلّم وحقائب تأهيل في القرآن والسنة والتعريف بالإسلام</span></span></a>
+      <a href="#trk"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/><path d="M9 8.5l2 2 4-4"/></svg></span><span><b>التقنية والذكاء الاصطناعي وتغذية «منهاج»</b><span>قاعدة معرفة معتمدة، ومساعد معرفي ذكي، ولوحات أثر</span></span></a>
+    </div>
+  </div>
+
+  <div class="equation reveal" aria-label="معادلة الشراكة">
+    <span class="t mwl">مرجعية الرابطة</span><span class="op">+</span><span class="t elm">تقنية عِلم</span><span class="op">+</span><span class="t ff">منهجية آفاق</span><span class="op">+</span><span class="t os">محتوى أصول</span><span class="op">=</span><span class="t res">رسالة عالمية تصل وتُقاس</span>
+  </div>
+
+  <div class="stats reveal">
+    <div class="stat"><span class="n num">705</span><span class="l">إصدارات دعوية في <b>56 لغة</b></span><span class="s">متجر أصول</span></div>
+    <div class="stat"><span class="n num">60,513</span><span class="l">مسلمًا جديدًا عبر الحوار الدعوي الإلكتروني</span><span class="s">موقع أصول · 2025</span></div>
+    <div class="stat"><span class="n num">22,536</span><span class="l">خريجًا من دورات التعليم الشرعي للمسلمين الجدد</span><span class="s">موقع أصول · 2025</span></div>
+    <div class="stat"><span class="n num">15.7<small> مليون</small></span><span class="l">زيارة لمواقع أصول</span><span class="s">موقع أصول · 2025</span></div>
+    <div class="stat"><span class="n num">23<small> مليون</small></span><span class="l">مستخدم لمنصة تاء في 195 دولة</span><span class="s">منصة تاء</span></div>
+    <div class="stat"><span class="n num">9.4<small> مليار ريال</small></span><span class="l">إيرادات عِلم: قدرة تنفيذية بمستوى الدولة</span><span class="s">الشرق الأوسط · 2025</span></div>
+  </div>
+
+  <div class="block reveal">
+    <h3>لماذا الآن؟</h3>
+    <p class="bl">أربعة معطيات تجعل اللحظة مناسبة للانتقال من بناء المنصة إلى تعظيم أثرها.</p>
+    <div class="grid g4 why">
+      <div class="card"><h4>«منهاج» انطلق ويحتاج وقودًا</h4><p>دشّنه معالي الأمين العام في مكة المكرمة، وأجاز المجمع الفقهي فكرته بالقرار رقم 23. أقسامه التعليمية والمعرفية تزدهر بالتحديث المستمر وتذبل بدونه.</p></div>
+      <div class="card"><h4>جاء ليحل تضارب المحتوى</h4><p>وهذا يشترط محتوى منضبطًا ومراجَعًا ومكيَّفًا لكل لغة وثقافة، لا مترجَمًا ترجمة حرفية.</p></div>
+      <div class="card"><h4>الذكاء الاصطناعي أصبح بوابة السؤال</h4><p>المساعد الذي لا يُغذّى بقاعدة معرفة معتمدة يُنتج إجابات متضاربة. وللرابطة اهتمام معلن بالملف عبر مؤتمر «الذكاء الاصطناعي للجميع».</p></div>
+      <div class="card"><h4>رؤية 2030 تدفع نحو الأثر</h4><p>قطاع غير ربحي أعمق أثرًا، ومحتوى رقمي سعودي منافس عالميًا، في نموذج يجمع شركة وطنية مع جهتين غير ربحيتين.</p></div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3>الفجوة بالأرقام</h3>
+    <p class="bl">يعرّف «منهاج» نفسه في متجر التطبيقات بعبارة «من مكة إلى العالم». هذه أرقامه المعلنة، وما يمكن أن تضيفه الشراكة.</p>
+    <div class="gap">
+      <div class="side now">
+        <h4>«منهاج» اليوم</h4>
+        <div><span class="big num">5</span> <b>لغات</b></div>
+        <div class="langbar" id="barNow" aria-hidden="true"></div>
+        <ul><li><span>الدول</span><b class="num">+96</b></li><li><span>الخدمات</span><b class="num">+20</b></li><li><span>المواد التعليمية</span><b class="num">+150</b></li></ul>
+      </div>
+      <div class="mid"><span>الشراكة تضيف</span></div>
+      <div class="side plus">
+        <h4>رصيد أصول الجاهز</h4>
+        <div><span class="big num">56</span> <b>لغة</b></div>
+        <div class="langbar" id="barPlus" aria-hidden="true"></div>
+        <ul><li><span>الإصدارات</span><b class="num">705</b></li><li><span>صفحات التعلّم في تاء</span><b class="num">2,733</b></li><li><span>مقررات وحقائب سبيل</span><b class="num">43</b></li></ul>
+      </div>
+    </div>
+    <p class="gap-caption">الجمهور في أكثر من 96 دولة، والمحتوى بخمس لغات: <b>وهناك فرصة لزيادة الدول واللغات والمصادر التعليمية والمعرفية.</b></p>
+  </div>
+</div></section>
+
+<!-- CH2 -->
+<section class="chapter" id="ch2"><div class="wrap">
+  <div class="ch-head reveal"><div class="ch-num">٢</div><span class="ch-kicker">الفصل الثاني · المنظومة</span><h2>أربع قوى في منظومة واحدة</h2><p>كل طرف يحمل ما لا يستطيعه الآخر بمفرده، والقيمة تولد من التقاء الثلاثة حول رسالة الرابطة. اختر طرفًا لترى ما يضيفه وما يكسبه.</p></div>
+  <div class="eco reveal">
+    <div>
+      <div class="orbit" id="orbit">
+        <svg class="lines" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34"/><line x1="50" y1="50" x2="50" y2="16"/><line x1="50" y1="50" x2="79.4" y2="67"/><line x1="50" y1="50" x2="20.6" y2="67"/></svg>
+        <button class="node c" data-k="mwl" style="left:50%;top:50%"><span class="pl"><img src="assets/img/lg_mwl.webp" alt=""></span><b>رابطة العالم الإسلامي</b><small>الجهة المستفيدة</small></button>
+        <button class="node" data-k="elm" style="left:50%;top:16%"><span class="pl"><img src="assets/img/lg_elm.webp" alt=""></span><b>عِلم</b><small>الشريك التقني</small></button>
+        <button class="node" data-k="ff" style="left:79.4%;top:67%"><span class="pl"><img src="assets/img/lg_ff.webp" alt=""></span><b>آفاق المستقبل</b><small>المعرفة والأثر</small></button>
+        <button class="node" data-k="osoul" style="left:20.6%;top:67%"><span class="pl"><img src="assets/img/lg_osoul.webp" alt=""></span><b>جمعية أصول</b><small>الرصيد الدعوي</small></button>
+      </div>
+      <p class="eco-hint">انقر على أي طرف</p>
+    </div>
+    <div class="card eco-panel" id="ecoPanel" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<!-- CH3 -->
+<section class="chapter" id="ch3"><div class="wrap">
+  <div class="ch-head reveal"><div class="ch-num">٣</div><span class="ch-kicker">الفصل الثالث · الأطراف</span><h2>من نحن، ولماذا نحن</h2><p>تعريف مركّز بكل طرف، وبما يجعل اجتماعه مع الآخرين قيمة مضافة.</p></div>
+
+  <div class="party reveal" id="p-mwl">
+    <div class="party-id"><div class="pl"><img src="assets/img/lg_mwl.webp" alt="رابطة العالم الإسلامي"></div><div class="txt"><h3>رابطة العالم الإسلامي</h3><span class="role">الجهة المستفيدة وصاحبة المرجعية</span></div></div>
+    <div class="party-body">
+      <p class="in">منظمة دولية مستقلة مقرها مكة المكرمة، أُنشئت بقرار المؤتمر الإسلامي العام في 14 ذي الحجة 1381هـ (18 مايو 1962م)، وينتمي أعضاؤها إلى مختلف الدول الإسلامية.</p>
+      <div class="facts"><span>صفة استشارية في المجلس الاقتصادي والاجتماعي للأمم المتحدة</span><span>مراقب في منظمة التعاون الإسلامي</span><span>عضوية في اليونسكو واليونيسف</span><span>المجمع الفقهي الإسلامي</span><span>هيئة علماء المسلمين</span><span>المجلس الأعلى العالمي للمساجد</span><span>وثيقة مكة المكرمة</span><span>موقع بسبع لغات</span></div>
+      <div class="block" style="margin-top:28px">
+        <h3>أهداف الرابطة، وما يخدمها في المقترح</h3>
+        <p class="bl">اختر هدفًا لترى ما يقدمه المقترح والمسارات المرتبطة به.</p>
+        <div class="matrix">
+          <div class="goals" id="goals"></div>
+          <div class="goal-out">
+            <div class="what"><b>ما يقدمه المقترح</b><span id="goalWhat"></span></div>
+            <div class="tr-pills">
+              <div class="tr-pill" data-t="k"><span class="dot"></span>المعرفة والتخطيط التنموي</div>
+              <div class="tr-pill" data-t="c"><span class="dot"></span>المحتوى والتعليم متعدد اللغات</div>
+              <div class="tr-pill" data-t="t"><span class="dot"></span>التقنية والذكاء الاصطناعي وتغذية «منهاج»</div>
+              <div class="tr-pill" data-t="m"><span class="dot"></span>الإعلام المعرفي وقياس الأثر</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="party reveal" id="p-elm">
+    <div class="party-id"><div class="pl"><img src="assets/img/lg_elm.webp" alt="عِلم"></div><div class="txt"><h3>عِلم</h3><span class="role">الشريك التقني والمتعاقد الرئيس</span></div></div>
+    <div class="party-body">
+      <p class="in">عِلم أقدر جهة وطنية على حمل هذا المشروع تقنيًا، والمقترح يمنحها ما ينقص أي شركة تقنية في القطاع الديني: المحتوى التخصصي والخبرة الميدانية.</p>
+      <div class="twocol">
+        <div class="card"><h4>ما تملكه عِلم</h4><ul class="list">
+          <li>شركة سعودية تأسست عام 1988، من شركات محفظة صندوق الاستثمارات العامة، ومدرجة في تداول منذ 2022.</li>
+          <li>إيرادات 9.4 مليار ريال وصافي ربح 2.1 مليار ريال في 2025.</li>
+          <li>صاحبة أشهر المنصات الوطنية: أبشر، وتم، ومقيم، ويقين، وإسهام في توكلنا.</li>
+          <li>وحدة أعمال للحج والعمرة، وحلول مثل «نسك AI» للإرشاد متعدد اللغات، وإدارة الحشود في الروضة الشريفة ومسجد قباء.</li>
+          <li>قريبة من المنصات الرقمية الدينية الوطنية، ومنها منصات الرابطة، ما يجعل التكامل مع «منهاج» امتدادًا طبيعيًا لخبرتها.</li>
+          <li>شعارها: «نخدم مجتمعنا.. ونسهّل حياة الناس».</li>
+        </ul></div>
+        <div class="card"><h4>ما تكسبه عِلم من الشراكة</h4><ol class="olist">
+          <li><span><b>رفع قيمة المنصات:</b> المنصة التي يتجدد محتواها يزداد مستخدموها ويبقون، وهذا ما يُقاس به نجاح المزوّد التقني.</span></li>
+          <li><span><b>محتوى تخصصي جاهز:</b> بدل استقطاب مترجمين ومراجعين شرعيين لعشرات اللغات، منظومة قائمة ومجرّبة.</span></li>
+          <li><span><b>نموذج منتج قابل للتكرار:</b> قاعدة المعرفة والمساعد ولوحات الأثر تُكرَّر لجهات دينية ووقفية أخرى.</span></li>
+          <li><span><b>أثر مجتمعي عالمي باسم سعودي:</b> يمتد من ضيوف الرحمن في الحرمين إلى المسلمين في بلدانهم طوال العام.</span></li>
+          <li><span><b>شريكان من داخل القطاع الثالث:</b> يعرفان القطاع غير الربحي والدعوي ويتحدثان لغة مجالسه وهيئاته العلمية.</span></li>
+        </ol></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="party reveal" id="p-ff">
+    <div class="party-id"><div class="pl"><img src="assets/img/lg_ff.webp" alt="آفاق المستقبل"></div><div class="txt"><h3>آفاق المستقبل</h3><span class="role">الشريك المتخصص في المعرفة والمحتوى والأثر</span></div></div>
+    <div class="party-body">
+      <p class="in">شركة سعودية غير ربحية مستقلة مقرها الرياض، تبني سلسلة قيمة متكاملة لتطوير المنظمات في القطاعات الحكومية والخاصة وغير الربحية. رؤيتها: الريادة في تطوير المنظمات وتعظيم أثرها. وعبارتها: «نحن لا نواكب المستقبل، نحن نصممه».</p>
+      <h3 style="font-size:18px;margin-top:26px">ستة مراكز متخصصة، ودور كل منها في الشراكة</h3>
+      <div class="centers">
+        <div class="center"><b>البحوث والاستشراف الاستراتيجي</b><span>ملفات البلدان والخارطة الحرارية ودراسات الاحتياج</span></div>
+        <div class="center"><b>الابتكار المؤسسي والاجتماعي</b><span>تصميم المبادرات والنماذج الأولية واختبارها</span></div>
+        <div class="center"><b>التحول الرقمي والذكاء الاصطناعي</b><span>تهيئة قاعدة المعرفة وتصميم تجربة المساعد بالتكامل مع عِلم</span></div>
+        <div class="center"><b>التطوير المؤسسي والاستشارات</b><span>إدارة البرنامج وحوكمة الشراكة</span></div>
+        <div class="center"><b>مقاييس ومعايير الأثر</b><span>إطار المؤشرات ولوحات المتابعة وتقارير الأثر</span></div>
+        <div class="center"><b>التميز في التعليم الدعوي وإدارة المعرفة</b><span>المحتوى العلمي والمسارات التعليمية وحقائب التأهيل</span></div>
+      </div>
+      <h3 style="font-size:18px;margin-top:30px">المنهجية في سبع حلقات</h3>
+      <p class="muted small">يمكن للرابطة أن تستفيد من الدورة كاملة، أو من حلقات بعينها.</p>
+      <ol class="rings"><li>نكتشف الفرصة</li><li>نبني البصيرة</li><li>نصمم الحل</li><li>نهيّئ للانطلاق</li><li>نعزز القدرة</li><li>نساند النمو</li><li>نقيس الأثر</li></ol>
+      <h3 style="font-size:18px;margin-top:30px">شراكات وطنية ودولية قائمة تثبت الجاهزية</h3>
+      <div class="ptn">
+        <div class="card"><div class="ph zoom" data-src="assets/img/pt_ctte.webp" data-cap="توقيع مذكرة تفاهم بين آفاق المستقبل واللجنة التنسيقية لجمعيات الدعوة"><img src="assets/img/pt_ctte.webp" alt="توقيع مذكرة تفاهم بين آفاق المستقبل واللجنة التنسيقية لجمعيات الدعوة"></div><div class="bd"><span class="tag">تمكين الجمعيات</span><b>اللجنة التنسيقية لجمعيات الدعوة بالمملكة</b><span>تطوير القدرات المؤسسية والبشرية للجمعيات، والدراسات، والتمكين الرقمي، وتطوير المحتوى، وتعزيز التنسيق بينها.</span></div></div>
+        <div class="card"><div class="ph empty">الحمدان</div><div class="bd"><span class="tag">منظومة معرفية</span><b>مؤسسة عبدالعزيز الحمدان الخيرية</b><span>تنظيم المعرفة والخبرات والمحتوى، وتطوير الأفكار إلى مبادرات ومنتجات، وبناء مجتمعات مهنية تخدم القطاع الدعوي.</span></div></div>
+        <div class="card"><div class="ph zoom" data-src="assets/img/pt_bathel.webp" data-cap="آفاق المستقبل ضمن شركاء النجاح في تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي"><img src="assets/img/pt_bathel.webp" alt="ملصق تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي"></div><div class="bd"><span class="tag">الذكاء الاصطناعي</span><b>مؤسسة باذل الأهلية</b><span>هاكاثون «تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي»، وآفاق ضمن شركاء النجاح بجانب سدايا ووزارة الاتصالات وتقنية المعلومات.</span></div></div>
+        <div class="card"><div class="ph zoom" data-src="assets/img/pt_london.webp" data-cap="توقيع مذكرة تفاهم بين آفاق المستقبل والمركز الثقافي الإسلامي – المسجد المركزي بلندن، 16 يوليو 2026"><img src="assets/img/pt_london.webp" alt="توقيع مذكرة تفاهم مع المركز الثقافي الإسلامي بلندن"></div><div class="bd"><span class="tag">شراكة دولية</span><b>المركز الثقافي الإسلامي – المسجد المركزي بلندن</b><span>مذكرة تفاهم (16 يوليو 2026) مع أحد أبرز المراكز الإسلامية في أوروبا: جسر جاهز إلى مجتمعات الأقليات المسلمة، ونموذج لتأهيل أئمة المراكز.</span></div></div>
+        <div class="card"><div class="ph empty classera">Classera<small>كلاسيرا للتعليم الذكي</small></div><div class="bd"><span class="tag">قيد التنفيذ</span><b>شركة كلاسيرا للتعليم الذكي</b><span>شراكة استراتيجية لتمكين القطاع غير الربحي رقميًا، وتوفير حلول تعليمية وتدريبية مستدامة، وبناء القدرات، وتوسيع فرص التدريب والتطوير.</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="party reveal" id="p-osoul">
+    <div class="party-id"><div class="pl"><img src="assets/img/lg_osoul.webp" alt="جمعية أصول"></div><div class="txt"><h3>جمعية أصول</h3><span class="role">الشريك المعرفي ومالك الرصيد الدعوي</span></div></div>
+    <div class="party-body">
+      <p class="in">رؤيتها: الريادة والتميز في صناعة المحتوى الدعوي وإثرائه بلغات العالم. أصول لا تنتج محتوى فقط، بل تختبره يوميًا في آلاف الحوارات مع جمهور حقيقي، وهذا ما يجعله أقرب لاحتياج الناس.</p>
+      <div class="onum">
+        <div class="card"><div class="n num">15.7M</div><div class="l">زيارة لمواقع أصول في 2025</div></div>
+        <div class="card"><div class="n num">60,513</div><div class="l">مسلمًا جديدًا عبر مشروع الحوار الدعوي الإلكتروني</div></div>
+        <div class="card"><div class="n num">22,536</div><div class="l">متخرجًا في دورات التعليم الشرعي للمسلمين الجدد</div></div>
+        <div class="card"><div class="n num">1,400</div><div class="l">زائر شهريًا في المتوسط لمعرض جامع الراجحي لتعريف السياح بالإسلام</div></div>
+      </div>
+      <div class="mini-stats">
+        <div><b class="num">151,812</b>حوارًا مباشرًا مع زوار من 113 دولة (مبادرة يا أيها الناس)</div>
+        <div><b class="num">606 · 17 · 6</b>بطاقة دعوية في 12 لغة، وكتابًا في 11 لغة، ومصحفًا مرئيًا مترجمًا (بوابة إفريقيا)</div>
+        <div><b class="num">93.5%</b>في الحوكمة، مع شهادة Great Place to Work وشهادة ISO</div>
+      </div>
+      <p class="note" style="margin-top:8px">الأرقام الأربعة الأولى من موقع الجمعية، والبقية من التقرير الختامي لعام 2025.</p>
+      <h3 style="font-size:18px;margin-top:28px">المبادرات الاستراتيجية الست</h3>
+      <div class="inits">
+        <div class="init"><b>إنه لقرآن كريم</b><span>الموسوعة القرآنية ومعالم التفسير وترجمات المعاني.</span></div>
+        <div class="init"><b>على خطى الرسول ﷺ</b><span>مشاريع تقرّب السنة، منها دورة «نضرة» لحفظ 150 حديثًا في المسجد النبوي.</span></div>
+        <div class="init"><b>زدني علمًا</b><span>تعليم العلم الشرعي، ومنه مشروع «سبيل» لتأهيل الدعاة ومعلمي الدعاة الناطقين بغير العربية.</span></div>
+        <div class="init"><b>يا أيها الناس</b><span>الحوار الدعوي الإلكتروني، وبوت الحوار عبر واتساب TheIslam.chat، وبوابتا الهند وإفريقيا.</span></div>
+        <div class="init"><b>جراب</b><span>منتجات معلوماتية تعرّف بأحوال البلدان وثقافاتها وسبل دعوة أهلها.</span></div>
+        <div class="init"><b>مركز التميز الدعوي</b><span>بيت خبرة يستشرف توجهات العمل الدعوي ويبني ملتقيات ومجتمعات مهنية.</span></div>
+      </div>
+      <div class="sabeel">
+        <img class="lg" src="assets/img/lg_sabeel.webp" alt="شعار مشروع سبيل">
+        <div>
+          <h4>هذا ما نستطيع بناءه لأئمة الرابطة</h4>
+          <p>مشروع «سبيل» نموذجًا: منظومة متكاملة لتأهيل الدعاة ومعلمي الدعاة الناطقين بغير العربية، من البناء العلمي إلى التقييم.</p>
+          <div class="sb-grid">
+            <div><b class="num">82</b><span>جدارة للدعاة ومعلميهم في 6 مجالات</span></div>
+            <div><b class="num">20 · 310</b><span>مقررًا تعليميًا ودرسًا</span></div>
+            <div><b class="num">23</b><span>حقيبة تدريبية في 5,700 صفحة</span></div>
+            <div><b class="num">305</b><span>ساعات تدريبية و 292 نشاطًا فريدًا</span></div>
+            <div><b class="num">1,150</b><span>سؤال اختبار نهائي و 574 سؤالًا في مقياس الجدارات</span></div>
+            <div><b class="num">3,600</b><span>صفحة تعليمية</span></div>
+            <div><b class="num">494</b><span>مؤشر أداء مطبَّق</span></div>
+            <div><b class="num">300</b><span>مرجع دعوي و 18 برنامجًا جامعيًا رُوجع</span></div>
+            <div><b class="num">90</b><span>متخصصًا في فرق العمل</span></div>
+            <div><b class="num">460</b><span>متدربًا حضوريًا في 23 دورة</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- CH4 -->
+<section class="chapter" id="ch4"><div class="wrap">
+  <div class="ch-head reveal"><div class="ch-num">٤</div><span class="ch-kicker">الفصل الرابع · الرصيد الجاهز</span><h2>الشراكة لا تبدأ من الصفر</h2><p>أصول قائمة يمكن توظيفها من الشهر الأول، وفق حقوق استخدامها والترتيبات مع الجهات المالكة أو المشغّلة لها.</p></div>
+  <div class="bank reveal">
+    <div class="asset"><b>المستودع الدعوي الرقمي</b><span>دراسات ومعلومات عن البلدان واللغات والمراكز الإسلامية.</span><span class="use">الخارطة الحرارية وملفات البلدان</span></div>
+    <div class="asset"><b>جراب: السياحة المعرفية</b><span>دراسات قُطرية عن أحوال المسلمين وتحدياتهم والمحتوى بلغاتهم المحلية.</span><span class="use">دراسات الأولويات التنموية</span></div>
+    <div class="asset"><b>الجمهرة للمحتوى الإسلامي</b><span>موسوعة مفردات المحتوى الإسلامي: مراجع ومعاجم وترجمات.</span><span class="use">قاعدة المعرفة للمساعد الذكي</span></div>
+    <div class="asset"><b>متجر أصول</b><span>705 إصدارات في 56 لغة: كتب وكتب صوتية وتفاعلية وحقائب ومناهج.</span><span class="use">مكتبة «منهاج» والحزم التعريفية</span></div>
+    <div class="asset"><b>منصة تاء لتعلّم الإسلام</b><span>دروس تفاعلية أقل من 5 دقائق، ومسارات واختبارات وشارات ولوحة شرف.</span><span class="use">التعليم التفاعلي في «منهاج»</span></div>
+    <div class="asset"><b>أكاديمية سبيل</b><span>مقررات وحقائب تفاعلية وجدول زمني ومقياس جدارات للدعاة.</span><span class="use">تأهيل أئمة المراكز والمعلمين</span></div>
+    <div class="asset"><b>TheIslam.chat</b><span>حوار ذكي عن الإسلام عبر واتساب.</span><span class="use">خبرة تشغيلية للمساعد المعرفي</span></div>
+    <div class="asset"><b>دليل سبيل للمصادر والمرصد الدعوي</b><span>أكثر من 20 مصدرًا مختارًا، منها المرصد الدعوي وإحصائيات المسلمين الجدد.</span><span class="use">نواة المرصد ولوحات القرار</span></div>
+  </div>
+
+  <div class="block reveal">
+    <h3>منصة تاء: تجربة تعلّم مثبتة</h3>
+    <p class="bl">منصة تابعة لأصول لتعليم ما لا يسع المسلم جهله، بواجهة في 29 لغة.</p>
+    <div class="showcase" id="scTaa"></div>
+  </div>
+  <div class="block reveal">
+    <h3>أكاديمية سبيل: منظومة تأهيل متكاملة</h3>
+    <p class="bl">برنامج تأهيل الدعاة ومعلمي الدعاة الناطقين بغير العربية، بتنفيذ جمعية أصول ورعاية أوقاف السهو.</p>
+    <div class="showcase" id="scSabeel"></div>
+  </div>
+
+  <div class="block reveal" id="library">
+    <h3>المكتبة: منتجات جاهزة بأغلفتها</h3>
+    <p class="bl">انقر على أي غلاف لعرضه بحجم أكبر.</p>
+    <div class="lib-tabs" role="tablist" id="libTabs"></div>
+    <div class="shelf" id="shelf"></div>
+    <p class="note lib-note" id="libNote"></p>
+  </div>
+</div></section>
+
+<!-- CH5 -->
+<section class="chapter" id="ch5"><div class="wrap">
+  <div class="ch-head reveal"><div class="ch-num">٥</div><span class="ch-kicker">الفصل الخامس · ما سنبنيه معًا</span><h2>ثلاثة مسارات، وخمسة مشروعات أولى</h2><p>دُمجت المسارات الثمانية في التصور الأولي في ثلاثة مسارات رئيسة يسندها ممكّنان. كل مسار يُنفّذ مستقلًا أو ضمن برنامج متكامل.</p></div>
+
+  <div class="block reveal" id="trk" style="margin-top:0">
+    <div class="tabs" role="tablist" id="trkTabs"></div>
+    <div class="card track" id="trkBody"></div>
+  </div>
+
+  <div class="block reveal">
+    <h3>خريطة تغذية «منهاج»</h3>
+    <p class="bl">الشراكة تثري وتطور المنتج القائم. اختر قسمًا من أقسام التطبيق لترى الإضافة المقترحة ومصدرها الجاهز.</p>
+    <div class="minhaj">
+      <div class="phone"><div class="screen">
+        <div class="sh"><small>من مكة إلى العالم</small><b>منهاج</b></div>
+        <div class="apps" id="apps"></div>
+        <div class="foot">أقسام مختارة من التطبيق</div>
+      </div></div>
+      <div class="mz-panel">
+        <h3>كل قسم في «منهاج» له مصدر جاهز</h3>
+        <p class="intro">تطبيق «منهاج» يضم 15 قسمًا أجازها المجمع الفقهي الإسلامي بالقرار رقم 23. تقترح الشراكة إثراء الأقسام المعرفية والتعليمية منها بمحتوى مراجَع ومتعدد اللغات.</p>
+        <div class="mz-card" id="mzCard" aria-live="polite"></div>
+        <img class="mz-strip zoom" src="assets/img/mz_s2.webp" data-cap="صور «منهاج» في متجر التطبيقات" alt="صور تطبيق منهاج في متجر التطبيقات">
+      </div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3>مرصد المجتمعات المسلمة</h3>
+    <p class="bl">لوحة تُظهر الاحتياج والفرص حسب الإقليم والبلد واللغة.</p>
+    <div class="obs">
+      <div class="regions" id="regions"></div>
+      <div class="card">
+        <h4>ماذا تعرض اللوحة عند التشغيل؟</h4>
+        <ul class="list">
+          <li>ملف معرفي لكل دولة ولغة ذات أولوية لدى الرابطة.</li>
+          <li>الأسئلة والتصورات السائدة عن الإسلام، مستفادة من أسئلة 151 ألف حوار أجرتها أصول في 2025.</li>
+          <li>فرص المبادرات والشراكات الممكنة مع المراكز الإسلامية.</li>
+          <li>بيانات تُراجع وتُحدَّث، تشغّلها عِلم تقنيًا وتغذيها آفاق وأصول معرفيًا.</li>
+        </ul>
+        <div class="legend"><span class="heat"><i class="h"></i><i></i><i></i></span>محتوى أولي <span class="heat"><i class="h"></i><i class="h"></i><i class="h"></i></span>محتوى ودراسات كثيفة</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block reveal" id="projects">
+    <h3>المشروعات الأولى المقترحة</h3>
+    <p class="bl">خمسة مشروعات محددة يمكن البدء بأي منها فور الاتفاق، وكلها تستند إلى أصل جاهز. ويمكن البدء باختيار اثنين منها للمرحلة التجريبية. الأرقام المستهدفة مقترحات للنقاش تُثبَّت مع الرابطة في مرحلة التشخيص.</p>
+    <div class="projects" id="projList"></div>
+  </div>
+</div></section>
+
+<!-- CH6 -->
+<section class="chapter" id="ch6"><div class="wrap">
+  <div class="ch-head reveal"><div class="ch-num">٦</div><span class="ch-kicker">الفصل السادس · كيف نعمل</span><h2>نافذة واحدة للرابطة، ومسؤوليات واضحة</h2><p>صيغة التعاقد، وهياكل الحوكمة، وخارطة الطريق، وطريقة قياس الأثر، وضمانات الجودة.</p></div>
+
+  <div class="block reveal" style="margin-top:0">
+    <h3>صيغة التعاقد المقترحة</h3>
+    <p class="bl">تتعاقد الرابطة مع عِلم بصفتها المتعاقد الرئيس، وتتعاقد عِلم مع آفاق بصفتها الشريك المتخصص، وتتولى آفاق تنظيم مساهمة أصول وأصولها المعرفية. بهذا تبقى للرابطة نافذة واحدة، ولعِلم شريك واحد مسؤول عن المحتوى.</p>
+    <div class="chain">
+      <div class="link"><span class="pl"><img src="assets/img/lg_mwl.webp" alt=""></span><b>رابطة العالم الإسلامي</b><span>تحدد الأولويات، وتُجيز المحتوى علميًا، وتملك المنصات</span></div>
+      <div class="link"><span class="pl"><img src="assets/img/lg_elm.webp" alt=""></span><b>عِلم · المتعاقد الرئيس</b><span>المنصات، والتكامل، والذكاء الاصطناعي، والتشغيل، والأمن</span></div>
+      <div class="link"><span class="pl"><img src="assets/img/lg_ff.webp" alt=""></span><b>آفاق · الشريك المتخصص</b><span>المحتوى، والتعليم، والدراسات، وإدارة البرنامج، وقياس الأثر</span></div>
+      <div class="link"><span class="pl"><img src="assets/img/lg_osoul.webp" alt=""></span><b>أصول · الشريك المعرفي</b><span>الرصيد الدعوي، والترجمة واللغات، والخبرة الميدانية</span></div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3>هياكل الحوكمة</h3>
+    <div class="gov">
+      <div class="card"><span class="who">الرابطة · عِلم · آفاق</span><b>اللجنة التوجيهية</b><p>اعتماد الأولويات والمراحل ومراجعة الأثر.</p><div class="freq">ربع سنوية</div></div>
+      <div class="card"><span class="who">من هيئات الرابطة</span><b>اللجنة العلمية</b><p>إجازة المحتوى ومصادر قاعدة المعرفة وضوابط المساعد. من المجمع الفقهي وهيئة علماء المسلمين.</p><div class="freq">حسب دفعات المحتوى</div></div>
+      <div class="card"><span class="who">عِلم · آفاق</span><b>مكتب إدارة البرنامج</b><p>التخطيط والمتابعة والمخاطر والتقارير.</p><div class="freq">أسبوعي</div></div>
+      <div class="card"><span class="who">المحتوى · اللغات · التقنية · البيانات</span><b>فرق المسارات</b><p>التنفيذ والتسليم بمختصين من الأطراف الثلاثة.</p><div class="freq">مستمر</div></div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3>خارطة الطريق</h3>
+    <p class="bl">أربع مراحل تبدأ بالتشخيص وتنتهي بالاستدامة. المدد تقديرية للنقاش.</p>
+    <div class="road">
+      <div class="phase"><span class="when">0 – 3 أشهر</span><b>التشخيص والمواءمة</b><span>ورشة مشتركة، وتحديد اللغات والدول ذات الأولوية، وجرد الأصول وحقوقها، واختيار مشروعين تجريبيين.</span><span class="gate">البوابة: اعتماد اللجنة التوجيهية لنطاق التجربة</span></div>
+      <div class="phase"><span class="when">3 – 9 أشهر</span><b>التجربة</b><span>إطلاق مسار «المسلم الجديد»، ونسخة أولى من المساعد المعرفي، وأول لوحة أثر.</span><span class="gate">البوابة: تحقق مؤشرات التجربة</span></div>
+      <div class="phase"><span class="when">9 – 18 شهرًا</span><b>التوسع</b><span>لغات إضافية، ومرصد المجتمعات، وحقائب الأئمة، وحزم المواسم.</span><span class="gate">البوابة: تقرير أثر سنوي</span></div>
+      <div class="phase"><span class="when">18 – 36 شهرًا</span><b>الاستدامة</b><span>تشغيل مستمر، ونقل المعرفة لفرق الرابطة، وتكرار النموذج لشركاء آخرين.</span><span class="gate">البوابة: مراجعة استراتيجية شاملة</span></div>
+    </div>
+  </div>
+
+  <div class="grid g2 reveal" style="margin-top:46px;align-items:start">
+    <div>
+      <h3 style="font-size:21px;margin-bottom:6px">قياس الأثر: من حجم النشاط إلى النتائج</h3>
+      <p class="bl muted" style="margin-bottom:18px">أربعة مستويات، كل مستوى يُبنى على ما تحته.</p>
+      <div class="pyr">
+        <div><b>الأثر</b><span>مبادرات اتُّخذت بناءً على المرصد، وأئمة مؤهَّلون ومستفيدوهم، وحضور الرابطة المعرفي بلغات جديدة.</span></div>
+        <div><b>النتائج</b><span>إتمام المسارات، والتحسن بين الاختبار القبلي والبعدي، ودقة إجابات المساعد وفق المراجعة العلمية، ورضا المستفيدين.</span></div>
+        <div><b>الاستخدام</b><span>المستخدمون النشطون في أقسام المحتوى، والعودة الأسبوعية، والمحادثات مع المساعد.</span></div>
+        <div><b>المخرجات</b><span>اللغات المغطاة، والدروس والمسارات المنشورة، والأسئلة المغطاة في قاعدة المعرفة، والدول المدروسة.</span></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size:21px;margin-bottom:6px">ضمانات الجودة والموثوقية</h3>
+      <p class="bl muted" style="margin-bottom:18px">ما يحفظ مرجعية الرابطة في كل منتج.</p>
+      <div class="grid" style="gap:10px">
+        <div class="card" style="padding:16px"><b>المرجعية العلمية للرابطة أولًا</b><p class="small" style="color:var(--ink2)">لا يُنشر محتوى ولا يُضاف مصدر للمساعد إلا بإجازة اللجنة العلمية.</p></div>
+        <div class="card" style="padding:16px"><b>ذكاء اصطناعي منضبط</b><p class="small" style="color:var(--ink2)">يجيب من القاعدة المعتمدة فقط، ويذكر مصدره، ولا يُفتي، ويُحيل المسائل الدقيقة.</p></div>
+        <div class="card" style="padding:16px"><b>تكييف لا ترجمة حرفية</b><p class="small" style="color:var(--ink2)">مراجعة لغوية وثقافية بمتحدثين أصليين لكل لغة.</p></div>
+        <div class="card" style="padding:16px"><b>حماية البيانات</b><p class="small" style="color:var(--ink2)">الالتزام بنظام حماية البيانات الشخصية ومعايير الأمن لدى عِلم.</p></div>
+        <div class="card" style="padding:16px"><b>حقوق واضحة</b><p class="small" style="color:var(--ink2)">اتفاق مسبق على ملكية المحتوى المنتج وحقوق استخدام الأصول القائمة.</p></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- CH7 -->
+<section class="chapter" id="ch7"><div class="wrap">
+  <div class="ch-head reveal"><div class="ch-num">٧</div><span class="ch-kicker">الفصل السابع · الخطوة التالية</span><h2>نحو مشروعات مشتركة ذات أثر مستدام</h2><p>انسجام المقترح مع رؤية السعودية 2030، وما نقترحه بعد هذا العرض.</p></div>
+  <div class="v2030 reveal">
+    <div><b>مجتمع حيوي وقيم راسخة</b><span>محتوى يعزز الوسطية والاعتدال ويبرز مكانة المملكة في خدمة الإسلام.</span></div>
+    <div><b>برنامج خدمة ضيوف الرحمن</b><span>حزم المواسم والحج والعمرة بلغات الزوار.</span></div>
+    <div><b>قطاع غير ربحي أعمق أثرًا</b><span>شراكة بين شركة وطنية وجهتين غير ربحيتين بمؤشرات أثر معلنة.</span></div>
+    <div><b>التحول الرقمي والذكاء الاصطناعي</b><span>حلول سعودية موثوقة قابلة للتصدير.</span></div>
+    <div><b>تنمية القدرات البشرية</b><span>تأهيل الأئمة والمعلمين ونقل المعرفة.</span></div>
+  </div>
+  <div class="closing reveal">
+    <div class="bg" role="img" aria-label="مظلات المسجد النبوي"></div>
+    <div class="closing-in">
+      <div>
+        <h3>نبدأ بفرص محددة، ونكبر وفق أولويات الرابطة</h3>
+        <p>تتطلع آفاق المستقبل إلى شراكة مع عِلم تبدأ بفرص محددة ذات قيمة واضحة، ثم تتوسع إلى برنامج متكامل، مع الاتفاق على المخرجات والمسؤوليات ومؤشرات النجاح.</p>
+        <div class="goal4"><span>مشروعات أكثر جودة</span><span>معرفة أوسع انتشارًا</span><span>خدمات أقرب لاحتياجات المستفيدين</span><span>أثر مستدام قابل للقياس</span></div>
+        <div class="contact"><code id="site">future.sa</code><code id="mail">info@future.sa</code><button class="copy" id="copyMail">نسخ البريد</button></div>
+      </div>
+      <ol class="steps">
+        <li>اجتماع تعارفي بين فريقي عِلم وآفاق لاستعراض المقترح والأصول الجاهزة</li>
+        <li>ورشة عمل لاختيار مشروعين تجريبيين وتحديد مؤشرات نجاحهما</li>
+        <li>توقيع مذكرة تفاهم تحدد الأدوار والمسؤوليات</li>
+        <li>عرض مشترك على رابطة العالم الإسلامي</li>
+      </ol>
+    </div>
+  </div>
+  <p class="motto-end">شراكات تصنع القيمة، ومشروعات يمتد أثرها · من الاحتياج إلى الأثر</p>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="flogos"><span class="pl"><img src="assets/img/lg_ff.webp" alt="آفاق المستقبل"></span><span class="pl"><img src="assets/img/lg_elm.webp" alt="عِلم"></span><span class="pl"><img src="assets/img/lg_mwl.webp" alt="رابطة العالم الإسلامي"></span><span class="pl"><img src="assets/img/lg_osoul.webp" alt="جمعية أصول"></span></div>
+    <p class="small muted">مقترح مقدَّم من شركة آفاق المستقبل إلى شركة عِلم. الأرقام من مصادرها المعلنة حتى أكتوبر 2026، والمشروعات والمدد مقترحات للنقاش.</p>
+    <details><summary>المصادر</summary><ul>
+      <li><a href="https://themwl.org/ar/MWL-Profile" target="_blank" rel="noopener">رابطة العالم الإسلامي: التعريف بالرابطة</a></li>
+      <li><a href="https://themwl.org/ar/minhaj_app" target="_blank" rel="noopener">رابطة العالم الإسلامي: تطبيق منهاج</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=sa.elm.mwl" target="_blank" rel="noopener">منهاج على Google Play</a></li>
+      <li><a href="https://sabq.org/saudia/wq8f44ommy" target="_blank" rel="noopener">سبق: تدشين منصة منهاج</a></li>
+      <li><a href="https://www.pif.gov.sa/ar/our-investments/our-portfolio/elm-company/" target="_blank" rel="noopener">صندوق الاستثمارات العامة: شركة عِلم</a></li>
+      <li><a href="https://aawsat.com/node/5246145" target="_blank" rel="noopener">الشرق الأوسط: نتائج عِلم 2025</a></li>
+      <li><a href="https://meatechwatch.com/2026/04/02/saudi-digital-firm-elm-expands-umrah-technology-footprint-at-madinah-forum/" target="_blank" rel="noopener">MEA Tech Watch: عِلم في ملتقى العمرة والزيارة</a></li>
+      <li><a href="https://saudipedia.com/en/article/972/economy-and-business/companies/elm-company" target="_blank" rel="noopener">سعوديبيديا: شركة عِلم</a></li>
+      <li><a href="https://osoulcontent.org.sa/ar/about" target="_blank" rel="noopener">جمعية أصول: من نحن</a></li>
+      <li><a href="https://osoulstore.com/ar" target="_blank" rel="noopener">متجر أصول</a></li>
+      <li><a href="https://learningislam.com/" target="_blank" rel="noopener">منصة تاء</a></li>
+      <li><a href="https://jirabe.com/ar/selectByCategory?category=gerab-alsyaht-almarfyt" target="_blank" rel="noopener">جراب: السياحة المعرفية</a></li>
+      <li><a href="https://sabeel-academy.github.io/resources/" target="_blank" rel="noopener">دليل سبيل للمصادر الرقمية</a></li>
+      <li>حصاد عام 2025: التقرير الختامي لجمعية أصول</li>
+      <li>تقرير مشروع سبيل لتأهيل الدعاة ومعلمي الدعاة</li>
+      <li>الملف التعريفي لشركة آفاق المستقبل</li>
+    </ul></details>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="عرض الصورة">
+  <img id="lbImg" alt="">
+  <div class="cap" id="lbCap"></div>
+  <button class="x" id="lbX" aria-label="إغلاق">×</button>
+  <button class="pv" id="lbP" aria-label="السابق">›</button>
+  <button class="nx" id="lbN" aria-label="التالي">‹</button>
+</div>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* theme toggle */
+const root=document.documentElement;
+try{const t=localStorage.getItem('afaq-theme'); if(t) root.setAttribute('data-theme',t);}catch(e){}
+$('#themeBtn').addEventListener('click',()=>{
+  const cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  const nx=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',nx);
+  try{localStorage.setItem('afaq-theme',nx)}catch(e){}
+});
+
+/* progress + active chapter */
+const links=$$('.chap-nav a'), chs=links.map(a=>$(a.getAttribute('href')));
+function onScroll(){
+  const h=document.documentElement; const p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+  $('#prog').style.width=(p*100).toFixed(1)+'%';
+  let idx=-1; chs.forEach((c,i)=>{ if(c && c.getBoundingClientRect().top<140) idx=i; });
+  links.forEach((a,i)=>a.classList.toggle('on',i===idx));
+  if(idx>=0){const a=links[idx]; const nav=a.parentElement; const r=a.getBoundingClientRect(), nr=nav.getBoundingClientRect(); if(r.left<nr.left||r.right>nr.right) nav.scrollBy({left:r.left-nr.left-20,behavior:'smooth'});}
+}
+addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+/* reveal (from visible resting state) */
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);} }),{rootMargin:'0px 0px -8% 0px'});
+  $$('.reveal').forEach(el=>{ const r=el.getBoundingClientRect(); if(r.top>innerHeight){ el.classList.add('pre'); io.observe(el);} });
+}
+
+/* language bars */
+const bn=$('#barNow'), bp=$('#barPlus');
+for(let i=0;i<56;i++){ const a=document.createElement('i'); if(i<5) a.className='on'; bn.appendChild(a); bp.appendChild(document.createElement('i')); }
+
+/* ecosystem */
+const ECO={
+ mwl:{role:'الجهة المستفيدة وصاحبة المرجعية',name:'رابطة العالم الإسلامي',c:'mwl',add:'المظلة الشرعية (المجمع الفقهي، هيئة علماء المسلمين)، والشبكة الدولية، والمنصات القائمة وفي مقدمتها «منهاج».',gain:'محتوى موثوق متجدد، ومبادرات مبنية على بيانات، وأثر مقيس يُعرض على المجالس والشركاء.'},
+ elm:{role:'الشريك التقني والمتعاقد الرئيس',name:'عِلم',c:'elm',add:'المنصات والبنية التحتية والذكاء الاصطناعي والتشغيل والأمن السيبراني والقدرة التعاقدية.',gain:'محتوى تخصصي جاهز يرفع قيمة منصاتها، ونموذج منتج قابل للتكرار في القطاع الديني، وأثر مجتمعي عالمي.'},
+ ff:{role:'الشريك المتخصص في المعرفة والمحتوى والأثر',name:'آفاق المستقبل',c:'ff',add:'منهجية «من الاحتياج إلى الأثر»، وستة مراكز متخصصة، وإدارة المشروعات، وقياس الأثر.',gain:'ميدان عالمي لتطبيق خبرتها، وشراكة وطنية نوعية.'},
+ osoul:{role:'الشريك المعرفي ومالك الرصيد الدعوي',name:'جمعية أصول',c:'osoul',add:'705 إصدارات في 56 لغة، ومنصات حوار وتعليم قائمة (تاء، سبيل، TheIslam.chat)، وفرق تتحدث لغات العالم.',gain:'انتشار أوسع لمحتواها عبر قنوات الرابطة، واستدامة لمشاريعها.'}
+};
+function eco(k){ const d=ECO[k];
+  $$('.node').forEach(n=>n.classList.toggle('on',n.dataset.k===k));
+  $('#ecoPanel').innerHTML=`<span class="role t ${d.c==='osoul'?'os':d.c}">${esc(d.role)}</span><h3>${esc(d.name)}</h3><dl><div><dt>ما يضيفه</dt><dd>${esc(d.add)}</dd></div><div><dt>ما يكسبه</dt><dd>${esc(d.gain)}</dd></div></dl>`;
+}
+$$('.node').forEach(n=>n.addEventListener('click',()=>eco(n.dataset.k))); eco('mwl');
+
+/* goals matrix */
+const GOALS=[
+ ['التعريف بالإسلام وبيان حقائقه وقيمه السمحة وفق القرآن والسنة','حزم تعريفية متعددة اللغات، ومختصرات التفسير، ومكتبات حديثية ميسّرة.','c'],
+ ['ترسيخ الوسطية والاعتدال في وعي الأمة','مساعد معرفي يجيب من مصادر معتمدة فقط، ومسارات تعلّم منضبطة.','tc'],
+ ['معالجة قضايا الأمة ودفع عوامل النزاع والشقاق','دراسات احتياجات، وتحليل أسئلة الجمهور والتصورات السائدة.','k'],
+ ['التواصل الحضاري ونشر ثقافة الحوار','محتوى يراعي السياقات الثقافية، ومواد إعلامية متعددة اللغات، وخبرة أصول في الحوار المباشر.','cm'],
+ ['الاهتمام بالأقليات المسلمة وقضاياها','ملفات بلدان، وحقائب لأئمة المراكز الإسلامية، ومسارات للمسلم الجديد.','kc'],
+ ['الاستفادة من موسم الحج','حزم المواسم داخل «منهاج»، وتحويل مخرجات المؤتمرات إلى منتجات معرفية.','ct'],
+ ['الحفاظ على الهوية الإسلامية وتحقيق وحدة الأمة','مسارات «يوم المسلم وأسبوعه وعامه»، ومرجعية معرفية موحّدة.','ct']
+];
+const gw=$('#goals');
+GOALS.forEach((g,i)=>{ const b=document.createElement('button'); b.className='goal'; b.innerHTML=`<i>${i+1}</i><span>${esc(g[0])}</span>`; b.addEventListener('click',()=>goal(i)); gw.appendChild(b); });
+function goal(i){ $$('.goal').forEach((b,j)=>b.classList.toggle('on',i===j)); $('#goalWhat').textContent=GOALS[i][1];
+  $$('.tr-pill').forEach(p=>p.classList.toggle('lit',GOALS[i][2].includes(p.dataset.t))); }
+goal(0);
+
+/* showcases */
+function showcase(el,cfg){
+  el.innerHTML=`<div class="browser"><div class="bar"><i></i><i></i><i></i><span>${esc(cfg.url)}</span></div><div class="view"><img alt=""></div><div class="thumbs"></div></div>
+  <div class="sc-text"><h4>${esc(cfg.title)}</h4><p class="muted">${esc(cfg.sub)}</p><p class="cap"></p><div class="kv">${cfg.kv.map(k=>`<div><b class="num">${esc(k[0])}</b><span>${esc(k[1])}</span></div>`).join('')}</div></div>`;
+  const view=el.querySelector('.view img'), cap=el.querySelector('.cap'), th=el.querySelector('.thumbs');
+  cfg.shots.forEach((s,i)=>{ const b=document.createElement('button'); b.setAttribute('aria-label',s[1]); b.innerHTML=`<img src="${s[0]}" alt="">`; b.addEventListener('click',()=>set(i)); th.appendChild(b); });
+  let cur=0; function set(i){cur=i; view.src=cfg.shots[i][0]; view.alt=cfg.shots[i][1]; cap.textContent=cfg.shots[i][1]; $$('#'+el.id+' .thumbs button').forEach((b,j)=>b.classList.toggle('on',i===j));}
+  el.querySelector('.view').addEventListener('click',()=>openLB(cfg.shots.map(s=>[s[0],s[1]]),cur));
+  set(0);
+}
+showcase($('#scTaa'),{url:'learningislam.com',title:'منصة تاء',sub:'تعليم إلكتروني تفاعلي وتنافسي لما لا يسع المسلم جهله، لكل الفئات العمرية.',
+ kv:[['193,493','طالبًا مسجلًا'],['23.1M','مستخدم'],['195','دولة'],['2,733','صفحة تعليمية']],
+ shots:[['assets/img/ta_dash.webp','اللوحة الرئيسية: صفحات تعليمية ودول ومستخدمون وطلاب'],['assets/img/ta_paths.webp','مسارات التعلّم: المناسبات والمواسم، أسماء الله الحسنى، الأسرة المسلمة، المرأة المسلمة'],['assets/img/ta_lesson.webp','درس «الزكاة: حقيقتها ومقاصدها» بترجماته إلى عشرات اللغات'],['assets/img/ta_quiz.webp','اختبار الدرس: 18,605 طالبًا'],['assets/img/ta_honor.webp','الطلاب الأكثر تفاعلًا: لوحة الشرف والنقاط'],['assets/img/ta_topics.webp','المواضيع الرئيسية: القرآن، العقيدة، العبادات، المعاملات، السنة'],['assets/img/ta_quran.webp','موضوع القرآن الكريم: دروس واختبارات']]});
+showcase($('#scSabeel'),{url:'أكاديمية سبيل',title:'أكاديمية سبيل',sub:'منصة تدريب بمسارات تعلّم وجدول زمني ومقياس جدارات وبرامج مرخّصة.',
+ kv:[['20','مقررًا تعليميًا'],['23','حقيبة تدريبية'],['82','جدارة'],['574','سؤالًا في مقياس الجدارات']],
+ shots:[['assets/img/sb_home.webp','الصفحة الرئيسية لأكاديمية سبيل'],['assets/img/sb_prog.webp','برنامج تأهيل الدعاة ومعلمي الدعاة'],['assets/img/sb_comp.webp','«أن تُعرّف بالإسلام يبدأ بأن تعرف جداراتك»: مقياس الجدارات'],['assets/img/sb_kifayat.webp','برنامج كفايات المعرّفين بالإسلام'],['assets/img/sb_dash.webp','لوحة المتدرب وخطته التدريبية'],['assets/img/sb_paths.webp','مسارات التعلّم'],['assets/img/sb_course.webp','مقرر «مدخل إلى التواصل القيمي والتأثير المجتمعي» بجدوله ومواده'],['assets/img/sb_guide.webp','دليل سبيل للمصادر الرقمية الدعوية']]});
+
+/* library */
+const TS=['الشهادتين','أصول الإيمان','الآل والصحب','أحكام الطهارة','أحكام الصلاة','أحكام الزكاة','أحكام الصوم','أحكام الحج والعمرة','أحكام الموت والجنازة','أحكام المعاملات المالية','أحكام المرأة المسلمة','أحكام الأسرة المسلمة','أحكام المواسم والمناسبات','القرآن الكريم','السنة النبوية','الاعتصام بالكتاب والسنة وأحكام الاستفتاء','الأوامر والنواهي الشرعية','الفضائل والآداب الإسلامية','يوم في حياة مسلم','جرعة يقين'];
+const CU=['أصول الدعوة إلى الله تعالى','فقه الدعوة في القرآن الكريم','فقه الدعوة في السنة النبوية','دعوة الأنبياء والرسل','فقه الدعوة في السيرة النبوية','إعداد الداعية','أصناف المدعوين','وسائل الدعوة وأساليبها','التعريف بالإسلام والدعوة إليه','التطبيقات الدعوية للقواعد الفقهية','تجديد الخطاب الدعوي','الإمامة والخطابة','الدعوة الرقمية وتطبيقاتها','صناعة المحتوى الدعوي','إدارة العمل الدعوي','فقه الاختلاف في العمل الدعوي','منهج الرد على الشبهات','دعوة أهل الأديان والفرق والمذاهب المعاصرة','الدعوة في بلدان الأقليات الإسلامية','التعليم الدعوي'];
+const BG=['مدخل إلى التواصل القيمي والتأثير المجتمعي','نماذج قيادية في التأثير القيمي','مهارات التواصل والتأثير','إدارة الاختلاف وبناء التوافق','صناعة المحتوى المؤثر','التواصل الثقافي والتعريف بالهوية','الحكمة والاتزان في المواقف','مهارات التفكير والتعلم المستمر','البناء القيمي الذاتي','تطبيقات قواعد التفكير','تطوير الخطاب وتجديد أساليب التأثير','تحليل المعوقات في بيئة العمل','أنماط الجمهور','التواصل الرقمي وصناعة الحضور المؤثر','إدارة البرامج والمبادرات','القيادة وصناعة التأثير','العمل في البيئات متعددة الثقافات','إدارة التعلم الذاتي','استراتيجيات نقل المعرفة','إدارة الذات والموارد الشخصية','التواصل المؤثر وبناء العلاقات','تصميم المشاريع','نموذج في القيادة والتواصل'];
+const EN=['Misconceptions and Refutations','The Light Within Islam','The Messenger of God Muhammad','The Message of Islam','Islam Is the Religion of Peace','Ease and Tolerance in Islam','Muhammad: Who Is He?','Glad Tidings','The Key to Understanding Islam','Bilal the Abyssinian','My First Steps in Islam','The Qur\'an: An Eternal Challenge','The Islamic Faith','Muhammad: Persecution and Hijra','Muhammad: The Prophet\'s Manners','Messages from God to You'];
+const IMG={
+ts:['assets/img/ts01.webp','assets/img/ts02.webp','assets/img/ts03.webp','assets/img/ts04.webp','assets/img/ts05.webp','assets/img/ts06.webp','assets/img/ts07.webp','assets/img/ts08.webp','assets/img/ts09.webp','assets/img/ts10.webp','assets/img/ts11.webp','assets/img/ts12.webp','assets/img/ts13.webp','assets/img/ts14.webp','assets/img/ts15.webp','assets/img/ts16.webp','assets/img/ts17.webp','assets/img/ts18.webp','assets/img/ts19.webp','assets/img/ts20.webp'],
+cu:['assets/img/cu01.webp','assets/img/cu02.webp','assets/img/cu03.webp','assets/img/cu04.webp','assets/img/cu05.webp','assets/img/cu06.webp','assets/img/cu07.webp','assets/img/cu08.webp','assets/img/cu09.webp','assets/img/cu10.webp','assets/img/cu11.webp','assets/img/cu12.webp','assets/img/cu13.webp','assets/img/cu14.webp','assets/img/cu15.webp','assets/img/cu16.webp','assets/img/cu17.webp','assets/img/cu18.webp','assets/img/cu19.webp','assets/img/cu20.webp'],
+bg:['assets/img/bg01.webp','assets/img/bg02.webp','assets/img/bg03.webp','assets/img/bg04.webp','assets/img/bg05.webp','assets/img/bg06.webp','assets/img/bg07.webp','assets/img/bg08.webp','assets/img/bg09.webp','assets/img/bg10.webp','assets/img/bg11.webp','assets/img/bg12.webp','assets/img/bg13.webp','assets/img/bg14.webp','assets/img/bg15.webp','assets/img/bg16.webp','assets/img/bg17.webp','assets/img/bg18.webp','assets/img/bg19.webp','assets/img/bg20.webp','assets/img/bg21.webp','assets/img/bg22.webp','assets/img/bg23.webp'],
+en:['assets/img/en01.webp','assets/img/en02.webp','assets/img/en03.webp','assets/img/en04.webp','assets/img/en05.webp','assets/img/en06.webp','assets/img/en07.webp','assets/img/en08.webp','assets/img/en09.webp','assets/img/en10.webp','assets/img/en11.webp','assets/img/en12.webp','assets/img/en13.webp','assets/img/en14.webp','assets/img/en15.webp','assets/img/en16.webp']};
+const LIB=[
+ {k:'ts',name:'سلسلة تاء التعليمية',t:TS,ar:'0.86',pre:'موجز: ',note:'عشرون موجزًا مطبوعًا تتكامل مع منصة تاء الرقمية، وتصلح محتوًى مباشرًا لمسار «المسلم الجديد» في «منهاج».'},
+ {k:'cu',name:'مقررات سبيل',t:CU,ar:'0.71',pre:'',note:'عشرون مقررًا في 310 دروس و 3,600 صفحة تعليمية، منها «الدعوة في بلدان الأقليات الإسلامية» و«الإمامة والخطابة».'},
+ {k:'bg',name:'حقائب سبيل التدريبية',t:BG,ar:'0.71',pre:'',note:'ثلاث وعشرون حقيبة في 5,700 صفحة و 305 ساعات تدريبية، تلتقي عناوينها مع هدفي الرابطة في الحوار الحضاري والوسطية.'},
+ {k:'en',name:'إصدارات أصول باللغة الإنجليزية',t:EN,ar:'0.75',pre:'',note:'نماذج من 705 إصدارات في 56 لغة متاحة في متجر أصول بصيغ مقروءة وصوتية وتفاعلية.'}];
+let libCur=0;
+LIB.forEach((l,i)=>{ const b=document.createElement('button'); b.setAttribute('role','tab'); b.innerHTML=`${esc(l.name)} <span class="num">${l.t.length}</span>`; b.addEventListener('click',()=>lib(i)); $('#libTabs').appendChild(b); });
+function lib(i){ libCur=i; const l=LIB[i];
+  $$('#libTabs button').forEach((b,j)=>{b.classList.toggle('on',i===j); b.setAttribute('aria-selected',i===j);});
+  const sh=$('#shelf'); sh.style.setProperty('--ar',l.ar); sh.innerHTML='';
+  l.t.forEach((t,j)=>{ const b=document.createElement('button'); b.className='book'; b.innerHTML=`<span class="cv"><img src="${IMG[l.k][j]}" alt="${esc(l.pre+t)}"></span><span>${esc(t)}</span>`; b.addEventListener('click',()=>openLB(l.t.map((tt,q)=>[IMG[l.k][q],l.name+' · '+tt]),j)); sh.appendChild(b); });
+  $('#libNote').textContent=l.note;
+}
+lib(0);
+
+/* tracks */
+const TRK=[
+ {n:'المعرفة والتخطيط التنموي',idea:'نعرف أين الحاجة قبل أن نقرر أين نستثمر. نبني للرابطة «مرصد المجتمعات المسلمة»: خارطة حرارية تُظهر الاحتياج والفرص حسب البلد واللغة والفئة.',
+  what:['ملفات معرفية للدول واللغات ذات الأولوية لدى الرابطة','دراسة احتياجات المجتمعات المسلمة والتصورات السائدة عن الإسلام، مستفيدين من أسئلة 151 ألف حوار أجرتها أصول في 2025','خارطة أولويات وفرص وشراكات ممكنة، ودراسات جدوى للمبادرات النوعية','لوحات معلومات تدعم القرار، مبنية على بيانات تُراجع وتُحدّث، تشغّلها عِلم تقنيًا'],
+  out:['ملفات البلدان','خريطة الاحتياجات الحرارية','دراسات موجّهة','لوحة معلومات القرار'],assets:['المستودع الدعوي الرقمي','جراب','المرصد الدعوي','بيانات الحوارات الدعوية'],
+  m:'معرفة أدق باحتياجات المجتمعات، وقرارات مستندة إلى البيانات، ومبادرات أكثر ارتباطًا بالمستفيدين.',e:'منتج بيانات ولوحات قرار يمكن تقديمه لجهات أخرى.'},
+ {n:'المحتوى والتعليم متعدد اللغات',idea:'نحوّل رسالة الرابطة وإصداراتها ومخرجات مؤتمراتها إلى محتوى يُقرأ ويُسمع ويُتعلَّم، بلغة المستفيد وثقافته وأسئلته.',
+  what:['التعريف بالإسلام: حزم معرفية متعددة اللغات، وإعادة بناء الإصدارات في صيغ مختصرة وتفاعلية، ومواد للمراكز الإسلامية','خدمة القرآن والسنة: مختصرات تفسير وترجمتها، وشروح الأحاديث الجامعة، ومسارات تعليمية','التعليم الرقمي: مسارات بموضوعات ولغات تعتمدها الرابطة على نموذج تاء، ودروس تفاعلية واختبارات ذكية','التأهيل: حقائب لأئمة المراكز الإسلامية والدعاة والمعلمين على نموذج سبيل','المرافقة المعرفية: يوم المسلم، وأسبوع المسلم، وعام المسلم، والمسلم الجديد'],
+  out:['مكتبات متعددة اللغات','مسارات تعلّم متدرجة','حقائب تدريبية','مواد للنشر الرقمي','تقارير تعليمية'],assets:['متجر أصول','منصة تاء','سبيل','إنه لقرآن كريم','على خطى الرسول ﷺ'],
+  m:'علاقة مستمرة مع المستفيدين، وأثر تعليمي قابل للقياس، ومحتوى واضح ومتسق يعزز الثقة برسالتها.',e:'محتوى يُبقي المستخدم في المنصة ويرفع مؤشرات الاستخدام.'},
+ {n:'التقنية والذكاء الاصطناعي وتغذية «منهاج»',idea:'نبني مع عِلم الطبقة المعرفية لمنصات الرابطة: قاعدة معرفة منتقاة تعتمدها الرابطة، وخدمات ذكية فوقها تجيب وتبحث وتُعلّم من مصادر موثّقة فقط.',
+  what:['قاعدة معرفة منتقاة من إصدارات الرابطة وقرارات المجمع الفقهي ومراجع الجمهرة ورصيد أصول، مصنّفة ومراجَعة وقابلة للتحديث','مساعد معرفي متعدد اللغات يجيب من القاعدة المعتمدة ويستشهد بمصدره، ويُحيل المسائل الاجتهادية إلى المرجعية البشرية','محرك بحث معرفي متقدم في المحتوى الإسلامي','لوحات متابعة لأداء المحتوى ونتائج التعلّم داخل «منهاج»'],
+  out:['قاعدة المعرفة المعتمدة','المساعد المعرفي','محرك البحث','لوحات الأداء'],assets:['الجمهرة','TheIslam.chat','خبرة آفاق في هاكاثون باذل'],
+  split:'آفاق وأصول تبنيان المحتوى وتصنيفه ومعايير الإجابة واختبارات الجودة؛ وعِلم تبني النماذج والبنية والتكامل والتشغيل والأمن.',
+  m:'صورة ذهنية رائدة في توظيف التقنية لخدمة الإسلام، وإجابات منضبطة بمرجعيتها.',e:'منتج «ذكاء اصطناعي موثوق للمحتوى الديني» يكمّل خبرتها في «نسك AI».'},
+ {n:'الممكّنان الإضافيان',idea:'ممكّنان يخدمان المسارات الثلاثة: إعلام يبرز المنجز، وإدارة معرفة تحوّل المشروعات المتفرقة إلى أصول قابلة للنمو.',
+  what:['الإعلام المعرفي: سلاسل مرئية وإنفوغرافيك ومواد صوتية متعددة اللغات، وتحويل الدراسات والإصدارات إلى منتجات إعلامية ميسّرة','تقارير أثر مصوّرة تبرز منجزات الرابطة وتعزز صورتها','إدارة المعرفة: قواعد معرفية منظمة، وآليات تصنيف المحتوى وتحديثه ومراجعته وإعادة استخدامه','قياس الأثر: مؤشرات أداء ونتائج تعليمية ومعرفية، ولوحات متابعة وتقارير'],
+  out:['سلاسل مرئية','حزم إنفوغرافيك','مستودعات معرفية','أدلة إدارة المحتوى','تقارير قياس الأثر'],assets:['مركز مقاييس ومعايير الأثر في آفاق','مركز التميز الدعوي'],
+  m:'انتقال القياس من حجم الأنشطة إلى النتائج، وحضور إعلامي يليق بالمنجز.',e:'أثر قابل للعرض على المجالس والمستثمرين.'}
+];
+TRK.forEach((t,i)=>{ const b=document.createElement('button'); b.setAttribute('role','tab'); b.textContent=(i<3?(i+1)+'. ':'')+t.n; b.addEventListener('click',()=>trk(i)); $('#trkTabs').appendChild(b); });
+function trk(i){ const t=TRK[i];
+  $$('#trkTabs button').forEach((b,j)=>{b.classList.toggle('on',i===j);b.setAttribute('aria-selected',i===j);});
+  $('#trkBody').innerHTML=`<div><p class="idea">${esc(t.idea)}</p><h5>ما نقدمه</h5><ul class="list">${t.what.map(w=>`<li>${esc(w)}</li>`).join('')}</ul>${t.split?`<h5>تقسيم العمل</h5><p style="color:var(--ink2);font-size:15px">${esc(t.split)}</p>`:''}</div>
+  <div><h5 style="margin-top:0">المخرجات</h5><div class="chips">${t.out.map(o=>`<span>${esc(o)}</span>`).join('')}</div><h5>الأصول الداعمة</h5><div class="chips">${t.assets.map(o=>`<span>${esc(o)}</span>`).join('')}</div><h5>القيمة</h5><div class="val"><div class="m"><b>للرابطة</b>${esc(t.m)}</div><div class="e"><b>لعِلم</b>${esc(t.e)}</div></div></div>`;
+}
+trk(0);
+
+/* minhaj */
+const IC={
+ learn:'<path d="M3 9l9-5 9 5-9 5-9-5Z"/><path d="M7 11.5V16c1.5 1.3 3.2 2 5 2s3.5-.7 5-2v-4.5"/>',
+ lib:'<path d="M5 4h4v16H5zM10 4h4v16h-4z"/><path d="M15.5 5.5l3.5-1 3 15-3.5 1z"/>',
+ quran:'<path d="M12 6c-2-1.5-5-2-8-1.5V19c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V4.5C17 4 14 4.5 12 6Z"/><path d="M12 6v14.5"/>',
+ know:'<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z"/>',
+ qa:'<path d="M4 5h16v11H9l-5 4z"/><path d="M10 9.2a2 2 0 1 1 2.6 1.9c-.4.1-.6.5-.6.9v.3M12 14h.01"/>',
+ dhikr:'<circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/>',
+ comm:'<circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3.5 19c.7-3 3-4.5 5.5-4.5s4.8 1.5 5.5 4.5M14.5 15.2c.8-.5 1.6-.7 2.5-.7 2 0 3.5 1.2 4 3.5"/>',
+ news:'<path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/>',
+ map:'<path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/>',
+ proj:'<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/>'
+};
+const MZ=[
+ ['learn','التعليم التفاعلي','مسارات متدرجة بلغات متعددة: ما لا يسع المسلم جهله، والمسلم الجديد، والمرأة المسلمة، والأسرة، والمواسم.','منصة تاء · دورات أصول للمسلمين الجدد · سلسلة تاء التعليمية (20 موجزًا)'],
+ ['lib','المكتبة','مئات الإصدارات المراجَعة بالصيغ المقروءة والصوتية والتفاعلية، تبدأ من 5 لغات إلى 56 لغة.','متجر أصول: 705 إصدارات في 56 لغة'],
+ ['quran','المصحف الإلكتروني','مختصرات تفسير، وترجمات معانٍ، ومعالم تفسير مرافقة للآيات.','مبادرة «إنه لقرآن كريم»: الموسوعة القرآنية وترجمة المعاني'],
+ ['know','المعارف','مقالات شرعية مبسطة متعددة اللغات تجيب عن أكثر الأسئلة تكرارًا.','أسئلة 151,812 حوارًا أجرتها أصول في 2025 · الجمهرة'],
+ ['qa','سؤال وجواب','مساعد معرفي ذكي يجيب من القاعدة المعتمدة ويحيل المسائل الدقيقة للعلماء.','خبرة TheIslam.chat · بالتكامل مع تقنيات عِلم'],
+ ['dhikr','الأذكار والتقويم','«يوم المسلم» و«عام المسلم»: محتوى يرافق اليوم والموسم.','موجز «يوم في حياة مسلم» · مسار «المناسبات والمواسم» في تاء'],
+ ['comm','المجتمعات الافتراضية','حلقات تعلّم موجّهة للمسلمين الجدد بلغاتهم، يديرها معلمون مؤهّلون.','المجموعات التعليمية لأصول: 732 مجموعة في 2025'],
+ ['news','الأخبار','تقارير معرفية عن أحوال الأقليات المسلمة وقضاياها.','جراب · المستودع الدعوي الرقمي'],
+ ['proj','المشاريع','قياس أثر مشاريع وثيقة مكة وعرضه للمتبرعين بوضوح.','مركز مقاييس ومعايير الأثر في آفاق']
+];
+MZ.forEach((m,i)=>{ const b=document.createElement('button'); b.className='app'; b.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${IC[m[0]]}</svg>${esc(m[1])}`; b.addEventListener('click',()=>mz(i)); $('#apps').appendChild(b); });
+function mz(i){ const m=MZ[i]; $$('.app').forEach((b,j)=>b.classList.toggle('on',i===j));
+  $('#mzCard').innerHTML=`<span class="sec">قسم في «منهاج»</span><h4>${esc(m[1])}</h4><p>${esc(m[2])}</p><p class="src">المصدر الجاهز: <b>${esc(m[3])}</b></p>`; }
+mz(0);
+
+/* observatory */
+const REG=[
+ ['جنوب آسيا',3,'الهند (بوابة الهند: 11,806 حوارًا، تلاوات بالهندية والبنغالية والتيلوجو)، باكستان، بنغلاديش'],
+ ['إفريقيا',3,'بوابة إفريقيا: 10 لغات مدروسة، 606 بطاقات في 12 لغة، 6 مصاحف مرئية مترجمة'],
+ ['أوروبا',2,'المملكة المتحدة، الدنمارك، النرويج، كوسوفو، البوسنة والهرسك (جراب) · شراكة مركز لندن'],
+ ['آسيا الوسطى',2,'طاجيكستان (جراب)'],
+ ['جنوب شرق آسيا والمحيط الهادئ',2,'تايلاند، تايوان، فيجي (جراب)'],
+ ['الأمريكتان',1,'البرازيل (جراب)']
+];
+$('#regions').innerHTML=REG.map(r=>`<div class="region"><b>${esc(r[0])}<span class="heat">${[0,1,2].map(i=>`<i class="${i<r[1]?'h':''}"></i>`).join('')}</span></b><span>${esc(r[2])}</span></div>`).join('');
+
+/* projects */
+const PRJ=[
+ ['مسار «المسلم الجديد» في «منهاج»','مسار تأسيسي متدرج بعشر لغات ذات أولوية، دروسه أقل من 5 دقائق، مع اختبارات وشهادات داخل التطبيق.','منصة تاء · سلسلة تاء التعليمية · خبرة أصول مع 22,536 خريجًا','المحتوى والتعليم','مسار متكامل في التعليم التفاعلي · اختبارات قبلية وبعدية · تقرير إتمام وتحسّن معرفي'],
+ ['مساعد «منهاج» المعرفي','مساعد ذكي متعدد اللغات يجيب من قاعدة معرفة معتمدة فقط، بدءًا بأكثر 500 سؤال تكرارًا، ويستشهد بمصادره.','الجمهرة · أسئلة الحوارات الدعوية · TheIslam.chat','التقنية والذكاء الاصطناعي','قاعدة معرفة مُجازة · نسخة أولى من المساعد · تقرير دقة الإجابات'],
+ ['مرصد المجتمعات المسلمة','خارطة حرارية ولوحة قرار لعشرين دولة ذات أولوية لدى الرابطة، تجمع الاحتياج والفرص والشركاء الممكنين.','المستودع الدعوي الرقمي · جراب · المرصد الدعوي','المعرفة والتخطيط','20 ملف دولة · لوحة معلومات تفاعلية · توصيات بالمبادرات'],
+ ['حقائب أئمة المراكز الإسلامية','برنامج تأهيل لأئمة المساجد والمعلمين في مجتمعات الأقليات، بالتنسيق مع المجلس الأعلى العالمي للمساجد، ونموذج أولي مع مركز لندن.','سبيل: 20 مقررًا و 23 حقيبة · مقياس الجدارات · منصة مكين','المحتوى والتعليم','برنامج مرخّص · مقياس جدارات · مجموعة أولى من الأئمة المؤهَّلين'],
+ ['حزم المواسم','محتوى رمضان والحج والعمرة داخل «منهاج» بلغات الحجاج والزوار، متسق مع حلول عِلم في الحج والعمرة.','مسار «المناسبات والمواسم» في تاء · موجز «أحكام الحج والعمرة» · أدلة أصول','المحتوى · التقنية','حزمة رمضان · حزمة الحج والعمرة · تقرير تفاعل موسمي']
+];
+$('#projList').innerHTML=PRJ.map((p,i)=>`<article class="proj"><div class="pn num">${i+1}</div><div><h4>${esc(p[0])}</h4><p>${esc(p[1])}</p><div class="chips outs">${p[4].split(' · ').map(o=>`<span>${esc(o)}</span>`).join('')}</div></div><dl><div><dt>يبني على</dt><dd>${esc(p[2])}</dd></div><div><dt>المسار</dt><dd>${esc(p[3])}</dd></div></dl></article>`).join('');
+
+/* lightbox */
+let LBS=[],LBI=0; const lb=$('#lb');
+function openLB(list,i){ LBS=list; LBI=i; showLB(); lb.hidden=false; document.body.style.overflow='hidden'; $('#lbX').focus(); }
+function showLB(){ const [s,c]=LBS[LBI]; $('#lbImg').src=s; $('#lbImg').alt=c; $('#lbCap').textContent=c+(LBS.length>1?`  (${LBI+1} / ${LBS.length})`:''); $('#lbP').hidden=$('#lbN').hidden=LBS.length<2; }
+function closeLB(){ lb.hidden=true; document.body.style.overflow=''; }
+$('#lbX').addEventListener('click',closeLB);
+$('#lbP').addEventListener('click',()=>{LBI=(LBI-1+LBS.length)%LBS.length;showLB();});
+$('#lbN').addEventListener('click',()=>{LBI=(LBI+1)%LBS.length;showLB();});
+lb.addEventListener('click',e=>{ if(e.target===lb) closeLB(); });
+addEventListener('keydown',e=>{ if(lb.hidden) return; if(e.key==='Escape') closeLB(); if(e.key==='ArrowLeft') $('#lbN').click(); if(e.key==='ArrowRight') $('#lbP').click(); });
+$$('[data-src]').forEach(el=>el.addEventListener('click',()=>openLB([[el.dataset.src,el.dataset.cap]],0)));
+$$('img.zoom').forEach(el=>el.addEventListener('click',()=>openLB([[el.src,el.dataset.cap||el.alt]],0)));
+
+/* copy */
+$('#copyMail').addEventListener('click',()=>{ const t=$('#mail').textContent, b=$('#copyMail');
+  const ok=()=>{b.textContent='نُسخ البريد'; setTimeout(()=>b.textContent='نسخ البريد',1800);};
+  const fb=()=>{ const r=document.createRange(); r.selectNodeContents($('#mail')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent='حدِّد البريد وانسخه'; };
+  try{ navigator.clipboard.writeText(t).then(ok,fb);}catch(e){fb();} });
+})();
+</script>
+
+</body>
+</html>
